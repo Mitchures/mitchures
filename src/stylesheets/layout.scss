@@ -1,0 +1,188 @@
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/typography';
+@import 'partials/grid';
+@import 'partials/nav';
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  background: $bg;
+  color: $primary-text;
+  > div {
+    position: relative;
+    overflow-x: hidden;
+  }
+}
+
+figcaption, figure, footer, header, main, nav {
+  display: block;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  &:active, &:hover {
+    outline-width: 0;
+  }
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+p, figure, img {
+  padding: 0;
+  margin: 0 0 1.45rem 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none outside none;
+
+  li {
+    margin: 0 1.75rem 0 0;
+  }
+}
+
+.container {
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 85rem;
+  width: 100%;
+}
+
+.content {
+  padding: 1rem 0;
+}
+
+.introduction {
+  opacity: 0;
+  animation: intro 1s cubic-bezier(0.23,1,0.32,1) forwards;
+}
+
+#hero {
+  height: 100vh;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#work {
+  //height: 2000px;
+}
+
+#about {
+  margin: 2rem 0 0;
+  h2 {
+    margin: 1.5rem 0 2rem 0;
+  }
+  h3 {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+  p {
+    color: $secondary-text;
+  }
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  top: -10vh;
+  left: 0vw;
+  width: 150vw;
+  height: 150vw;
+  border-radius: 50%;
+  opacity: 0.25;
+  background-image: url("../images/self.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+@media (min-width: 62rem) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  nav {
+    padding: 2rem 0;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    max-width: 100%;
+    width: 68rem;
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  #hero {
+    height: 90vh;
+  }
+
+  #about {
+    h2 {
+      margin: 1.5rem 0 2.5rem 0;
+    }
+    h3 {
+      margin: 0 0 1.5rem 0;
+    }
+  }
+
+  .circle {
+    top: -15vh;
+    left: 40vw;
+    width: 70vw;
+    height: 70vw;
+  }
+
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+

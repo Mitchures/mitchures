@@ -18,6 +18,9 @@ const About = () => (
         `}
     render={data => (
       <section id="about" className="grid">
+        <div className="col-xs-12">
+          <h2>About</h2>
+        </div>
         <div className="col-xs-12 col-md-3">
           <h3>The Story</h3>
         </div>

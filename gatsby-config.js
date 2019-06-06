@@ -44,15 +44,18 @@ module.exports = {
     projects: [
       {
         name: `Otaku Ipsum`,
-        description: `Otaku-themed placeholder text generator built with Gatsby.js and React.`
+        description: `Otaku-themed placeholder text generator built with Gatsby.js and React.`,
+        url: `https://otakuipsum.netlify.com/`
       },
       {
         name: `Cryptocurrency Comparison`,
-        description: `Built with Gatsby.js & React using the CoinMarketCap API.`
+        description: `Built with Gatsby.js & React using the CoinMarketCap API.`,
+        url: `https://cryptocompare.netlify.com/`
       },
       {
         name: `Maku`,
-        description: `A Rails 5 Movie Search app that utilizes the Movie Database API.`
+        description: `A Rails 5 Movie Search app that utilizes the Movie Database API.`,
+        url: `https://maku.herokuapp.com/`
       }
     ]
   },

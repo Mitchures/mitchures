@@ -11,6 +11,7 @@ const Work = () => (
                 projects {
                   name
                   description
+                  url
                 }
               }
             }
@@ -18,11 +19,15 @@ const Work = () => (
         `}
     render={data => (
       <section id="work" className="grid">
+        <div className="col-xs-12">
+          <h2>Work</h2>
+        </div>
         {
           data.site.siteMetadata.projects.map(project => (
             <div className="col-xs-12 col-md-6">
-              <a href="#" rel="noopener noreferrer">
+              <a href={project.url} rel="noopener noreferrer">
                 <figure>
+                  <div className="cover-art" />
                   <figcaption>
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { graphql, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 const Work = () => (
   <StaticQuery
@@ -12,6 +13,28 @@ const Work = () => (
                   name
                   description
                   url
+                  cover
+                }
+              }
+            }
+            otaku: file(relativePath: { regex: "/otaku.png/" }) {
+              childImageSharp {
+                fluid(maxWidth: 640, maxHeight: 480) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            crypto: file(relativePath: { regex: "/crypto.png/" }) {
+              childImageSharp {
+                fluid(maxWidth: 640, maxHeight: 480) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            maku: file(relativePath: { regex: "/maku.png/" }) {
+              childImageSharp {
+                fluid(maxWidth: 640, maxHeight: 480) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -19,23 +42,22 @@ const Work = () => (
         `}
     render={data => (
       <section id="work" className="grid">
-        <div className="col-xs-12">
-          <h2>Work</h2>
-        </div>
         {
-          data.site.siteMetadata.projects.map(project => (
-            <div className="col-xs-12 col-md-6">
-              <a href={project.url} rel="noopener noreferrer">
-                <figure>
-                  <div className="cover-art" />
-                  <figcaption>
-                    <h3>{project.name}</h3>
-                    <p>{project.description}</p>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-          ))
+          data.site.siteMetadata.projects.map((project, i) => {
+            return (
+              <div key={i} className="col-xs-12 col-md-6">
+                <a href={project.url} rel="noopener noreferrer">
+                  <figure>
+                    <Img className="cover-art" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/>
+                    <figcaption>
+                      <h3>{project.name}</h3>
+                      <p>{project.description}</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+            )
+          })
         }
       </section>
     )}
@@ -43,3 +65,4 @@ const Work = () => (
 )
 
 export default Work
+

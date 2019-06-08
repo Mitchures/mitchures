@@ -6,6 +6,7 @@ import Parallax from 'react-rellax'
 
 import Header from "./header"
 import "../stylesheets/layout.scss"
+import Footer from "./footer"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,11 +31,12 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Parallax speed={6} className="circle"/>
+        <Parallax speed={6} className="parallax"/>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className="content">
           {children}
         </main>
+        <Footer/>
       </div>
     )}
   />

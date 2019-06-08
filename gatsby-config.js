@@ -3,6 +3,24 @@ module.exports = {
     title: `Mitchures`,
     description: `I'm Mitchell Hollander, a Software Developer & Photographer based in Nashville, Tennessee.`,
     author: `Mitchell Hollander`,
+    social: [
+      {
+        name: `Instagram`,
+        url: `https://www.instagram.com/mitchures.co/`
+      },{
+        name: `Facebook`,
+        url: `https://www.facebook.com/profile.php?id=100008081385480`
+      },{
+        name: `Pinterest`,
+        url: `https://www.pinterest.com/MitchellH07/`
+      },{
+        name: `Github`,
+        url: `https://github.com/mitchellsh`
+      },{
+        name: `VSCO`,
+        url: `https://vsco.co/mitchures/`
+      },
+    ],
     clients: [
       {
         name: `Apple`,
@@ -45,17 +63,20 @@ module.exports = {
       {
         name: `Otaku Ipsum`,
         description: `Otaku-themed placeholder text generator built with Gatsby.js and React.`,
-        url: `https://otakuipsum.netlify.com/`
+        url: `https://otakuipsum.netlify.com/`,
+        cover: `otaku`
       },
       {
         name: `Cryptocurrency Comparison`,
         description: `Built with Gatsby.js & React using the CoinMarketCap API.`,
-        url: `https://cryptocompare.netlify.com/`
+        url: `https://cryptocompare.netlify.com/`,
+        cover: `crypto`
       },
       {
         name: `Maku`,
         description: `A Rails 5 Movie Search app that utilizes the Movie Database API.`,
-        url: `https://maku.herokuapp.com/`
+        url: `https://maku.herokuapp.com/`,
+        cover: `maku`
       }
     ]
   },

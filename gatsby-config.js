@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mitchures`,
-    description: `I'm Mitchell Hollander, a passionate Software Developer & exuberant Photographer based in Nashville, TN.`,
+    description: `I'm Mitchell Hollander, an exuberant software developer & creative photographer based in Nashville, Tennessee.`,
     author: `Mitchell Hollander`,
     social: [
       {

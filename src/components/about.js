@@ -48,17 +48,22 @@ const About = () => (
           <h3>Programming Skills</h3>
         </div>
         <div className="col-xs-12 col-md-9">
-          <p>{(new Date().getFullYear() - 2014)} years of programming experience in the following languages, concepts, and frameworks</p>
-          {
-            skills.map((skill, i) => {
-              return (
-                <div key={i} className="skillbar">
-                  <span className="title">{skill[0]}</span>
-                  <div className="filled" style={{width: skill[1] + '%'}}/>
-                </div>
-              )
-            })
-          }
+          <p>{(new Date().getFullYear() - 2014)} years of programming experience in the following languages, concepts, and frameworks:</p>
+          {/*{*/}
+            {/*skills.map((skill, i) => {*/}
+              {/*return (*/}
+                {/*<div key={i} className="skillbar">*/}
+                  {/*<span className="title">{skill[0]}</span>*/}
+                  {/*<div className="filled" style={{width: skill[1] + '%'}}/>*/}
+                {/*</div>*/}
+              {/*)*/}
+            {/*})*/}
+          {/*}*/}
+          <p>
+            <em>
+              HTML, CSS, Javascript, Vue, React, Gatsby, Coffeescript, jQuery, Node, Ruby, Rails, Sass, SQL, Firebase, Bootstrap, Material Design, Jekyll, Liquid, Git, Subversion, and many more.
+            </em>
+          </p>
         </div>
         <div className="col-xs-12 col-md-3">
           <h3>Clients, Features, &amp; Publications</h3>

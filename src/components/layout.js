@@ -31,7 +31,8 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Parallax speed={6} className="parallax"/>
+        <Parallax speed={4} className="alpha" style={{ transform: 'rotate(45deg)' }}/>
+        <Parallax speed={8} className="beta" style={{ transform: 'rotate(45deg)' }}/>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className="content">
           {children}

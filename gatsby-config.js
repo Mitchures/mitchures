@@ -24,39 +24,35 @@ module.exports = {
     clients: [
       {
         name: `Apple`,
-        summary: `Featured in Apple's Shot On iPhone 6s Campaign where one of my iPhone photos was displayed on billboards all around the world in over 26 countries.`
+        summary: `A photo of mine was featured in Apple's "Shot On iPhone 6s" World Gallery campaign for the iPhone 6s. The photo was posted on billboards and print publications all around the world in over 26 countries.`
       },
       {
         name: `Water Journal`,
-        summary: `Featured and Published in Water Journal Volume 3.`
+        summary: `Water Journal is an exploration of all things water and life, celebrating its undeniable beauty and complexity. Several photos of mine from one of my trips to Iceland are featured in Volume 3 including a short story written by me.`
       },
       {
         name: `Parkland`,
-        summary: `Promotional photos & part of the Parkland Field Team.`
+        summary: `Established in 2015, Parkland Design & Manufacturing creates sustainable bags and accessories for everyday life. I was commissioned by Parkland to take promotional photos of their products.`
       },
       {
         name: `Rucksack Magazine`,
-        summary: `Featured in an Interview on Rucksack Mag's website.`
+        summary: `Rucksack Magazine is an online journal and printed bi-annual publication for both written & visual storytelling through adventure and photography. I was fortunate enough to be interviewed and featured on Rucksack Mag's online journal.`
       },
       {
         name: `Welly Merck`,
-        summary: `Promotional photos for their wrist watches.`
+        summary: `Welly Merck was founded on the true story of Merck and Welly, lovers who established a timeless identity by facing adversity and overcoming it. Welly Merck watches are evidence of their journey. I was commissioned by Welly Merck to take promotional photos of their wrist watches.`
       },
       {
         name: `Unsplash`,
-        summary: `Promotional photos for Unsplash at the Makers to Merchants event hosted by Weebly.`
+        summary: `Unsplash is a tool for creatives to access beautiful, free images gifted by the world’s most generous community of photographers. I was hired by Unsplash to take free professional photos of guests at the Makers to Merchants event hosted by Weebly.`
       },
       {
         name: `Mahabis`,
-        summary: `Promotional photos for Mahabis footwear.`
+        summary: `Mahabis is an award-winning range of slippers designed for comfort. I was commissioned by Mahabis to take promotional photos of their footwear. My Wife still wears her gifted pair to this day.`
       },
       {
         name: `Trade Coffee`,
-        summary: `Promotional photos of coffee ordered from Trade Coffee.`
-      },
-      {
-        name: `Fotog Magazine`,
-        summary: `Featured in Volume 2 of Fotog Mag.`
+        summary: `Shop the best specialty coffee subscription from the nation's best roasters on Trade, fresh coffee roasted to order and delivered right to your door. I was commissioned by Trade to take promotional photos of a few select coffee blends.`
       }
     ],
     projects: [

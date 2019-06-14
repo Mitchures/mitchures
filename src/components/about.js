@@ -2,23 +2,23 @@ import React from 'react'
 
 import { graphql, StaticQuery } from "gatsby"
 
-const skills = [
-  ['HTML', '100'],
-  ['CSS', '90'],
-  ['Javascript', '90'],
-  ['Vue', '75'],
-  ['React', '50'],
-  ['Gatsby', '50'],
-  ['jQuery', '70'],
-  ['Node', '60'],
-  ['Express', '50'],
-  ['Ruby on Rails', '65'],
-  ['SASS', '80'],
-  ['SQL', '40'],
-  ['Java', '30'],
-  ['Git', '80'],
-  ['Subversion', '60']
-]
+// const skills = [
+//   ['HTML', '100'],
+//   ['CSS', '90'],
+//   ['Javascript', '90'],
+//   ['Vue', '75'],
+//   ['React', '50'],
+//   ['Gatsby', '50'],
+//   ['jQuery', '70'],
+//   ['Node', '60'],
+//   ['Express', '50'],
+//   ['Ruby on Rails', '65'],
+//   ['SASS', '80'],
+//   ['SQL', '40'],
+//   ['Java', '30'],
+//   ['Git', '80'],
+//   ['Subversion', '60']
+// ]
 
 const About = () => (
   <StaticQuery

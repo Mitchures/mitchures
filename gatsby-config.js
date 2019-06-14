@@ -24,7 +24,7 @@ module.exports = {
     clients: [
       {
         name: `Apple`,
-        summary: `A photo of mine was featured in Apple's "Shot On iPhone 6s" World Gallery campaign for the iPhone 6s. The photo was posted on billboards and print publications all around the world in over 26 countries.`
+        summary: `In 2016, a photo of mine was selected to be featured in Apple's "Shot On iPhone 6s" World Gallery campaign for the iPhone 6s. The photo was then posted on billboards and print publications all around the world in over 26 countries.`
       },
       {
         name: `Water Journal`,

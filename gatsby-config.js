@@ -95,7 +95,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/m-icon.png`,
       },
     }
   ],

@@ -63,9 +63,9 @@ module.exports = {
         cover: `otaku`
       },
       {
-        name: `Cryptocurrency Comparison`,
-        description: `Built with Gatsby.js & React using the CoinMarketCap API.`,
-        url: `https://cryptocompare.netlify.com/`,
+        name: `Cryptocurrency Dashboard`,
+        description: `Cryptocurrency Dashboard app built with Ruby on Rails using the CryptoCompare API.`,
+        url: `https://crypto-comparison-dashboard.herokuapp.com/`,
         cover: `crypto`
       },
       {

@@ -30,6 +30,14 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript"></script>
+          <script type="text/javascript">{`
+            (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-1846943261947576",
+              enable_page_level_ads: true
+            });
+          `}
+          </script>
         </Helmet>
         <Parallax speed={4} className="alpha" style={{ transform: 'rotate(45deg)' }}/>
         <Parallax speed={8} className="beta" style={{ transform: 'rotate(45deg)' }}/>

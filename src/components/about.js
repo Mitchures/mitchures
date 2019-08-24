@@ -10,6 +10,7 @@ const About = () => (
               siteMetadata {
                 clients {
                   name
+                  url
                   summary
                 }
               }
@@ -105,6 +106,7 @@ const About = () => (
                   <li key={i}>
                     <h4>{client.name}</h4>
                     <p>{client.summary}</p>
+                    <a className="link" href={client.url}>{client.url}</a>
                   </li>
                 )
               })

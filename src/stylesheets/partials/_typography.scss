@@ -1,5 +1,41 @@
+@font-face {
+  font-family: "San Francisco Regular";
+  font-weight: 500;
+  src: url("../fonts/SF-Compact-Rounded-Regular.otf");
+}
+
+@font-face {
+  font-family: "San Francisco Medium";
+  font-weight: 500;
+  src: url("../fonts/SF-Compact-Rounded-Medium.otf");
+}
+
+@font-face {
+  font-family: "San Francisco Semibold";
+  font-weight: 600;
+  src: url("../fonts/SF-Compact-Rounded-Semibold.otf");
+}
+
+@font-face {
+  font-family: "San Francisco Bold";
+  font-weight: 700;
+  src: url("../fonts/SF-Compact-Rounded-Bold.otf");
+}
+
+@font-face {
+  font-family: "San Francisco Heavy";
+  font-weight: 800;
+  src: url("../fonts/SF-Compact-Rounded-Heavy.otf");
+}
+
+@font-face {
+  font-family: "San Francisco Black";
+  font-weight: 900;
+  src: url("../fonts/SF-Compact-Rounded-Black.otf");
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'San Francisco Regular', sans-serif;
   font-size: 1rem;
   font-weight: normal;
   word-wrap: break-word;
@@ -14,20 +50,18 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Futura', 'Futura PT', sans-serif;
+  font-family: 'San Francisco Bold', sans-serif;
   color: #000;
-  font-weight: 600;
 }
 
 .introduction {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
+  font-family: 'San Francisco Bold', sans-serif;
 }
 
 ul {
   li {
     h4 {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'San Francisco Semibold', sans-serif;
     }
   }
 }

@@ -1,17 +1,25 @@
+nav .grid>[class*="column-"] {
+  padding: 0 1rem;
+}
+
 nav {
   position: absolute;
   padding: 1.5rem 0;
   width: 100%;
-  font-family: 'Futura', 'Futura PT', sans-serif;
   span {
     letter-spacing: .5rem;
     text-transform: uppercase;
+    margin-left: .5rem;
     font-weight: 900;
     color: $primary-text;
+    font-family: 'San Francisco Heavy', sans-serif;
   }
   ul {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
     li {
       &:nth-child(2) {
         margin: 0;
@@ -21,6 +29,7 @@ nav {
         display: inline-block;
         overflow: hidden;
         letter-spacing: .05rem;
+        font-family: 'San Francisco Regular', sans-serif;
         &::before {
           @include pseudo();
           left: 0;

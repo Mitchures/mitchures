@@ -3,6 +3,7 @@
 @import 'partials/typography';
 @import 'partials/grid';
 @import 'partials/nav';
+
 * {
     box-sizing: border-box;
     &::before,
@@ -31,7 +32,7 @@ nav {
 }
 
 a {
-    color: #000;
+    color: $primary-text;
     text-decoration: none;
     cursor: pointer;
     background-color: transparent;
@@ -81,7 +82,7 @@ ul {
 }
 
 .logo {
-    // display: none;
+    display: none;
 }
 
 .logo-content {
@@ -209,7 +210,7 @@ footer {
         bottom: 0;
         width: 100%;
         height: 0.125rem;
-        background-image: $gradient-mystic;
+        background-image: $gradient-warm;
         visibility: hidden;
         transform: translateX(-100%);
         transition: all 0.3s ease;
@@ -222,6 +223,7 @@ footer {
         }
     }
 }
+
 
 @media (min-width: 62rem) {
     body {

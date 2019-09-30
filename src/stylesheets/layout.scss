@@ -133,21 +133,30 @@ ul {
 
 figure {
     margin: 0;
-    &:hover {
-        .cover-art {
-            box-shadow: rgba(46, 41, 51, 0.08) 0 10px 14px, rgba(71, 63, 79, 0.08) 0 12px 14px;
-            transform: translate3d(0, -4px, 0);
-        }
-    }
-    .cover-art {
-        border-radius: .75rem;
-        transform: translate3d(0, 0, 0);
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    }
     figcaption {
         p {
             margin: 0 0 3rem 0;
             color: $secondary-text;
+        }
+    }
+    &.work-item {
+        margin-bottom: 1.2rem;
+        min-height: 140px;
+        backdrop-filter: blur(25px) saturate(120%);
+        background: rgba(240, 240, 240, 0.5);
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        &:hover {
+            transform: scale(1.05) translateZ(0px);
+        }
+        figcaption {
+            h3 {
+                margin: 0px 0px 0.4rem;
+            }
+            p {
+                margin: 0;
+            }
         }
     }
 }
@@ -227,7 +236,7 @@ footer {
 
 @media (min-width: 62rem) {
     body {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
     nav {
         padding: 2rem 0;
@@ -270,6 +279,10 @@ footer {
         position: absolute;
         transform: translateX(3rem);
         transition: transform 300ms ease, opacity 150ms ease;
+    }
+
+    .work-item {
+        margin-bottom: 0 !important;
     }
 
     #hero {

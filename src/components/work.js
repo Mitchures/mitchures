@@ -47,8 +47,8 @@ const Work = () => (
             return (
               <div key={i} className="col-xs-12 col-md-6">
                 <a href={project.url} rel="noopener noreferrer">
-                  <figure>
-                    <Img className="cover-art" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/>
+                  <figure className="work-item">
+                    {/* <Img className="cover-art" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/> */}
                     <figcaption>
                       <h3>{project.name}</h3>
                       <p>{project.description}</p>

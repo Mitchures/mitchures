@@ -99,19 +99,18 @@ const About = () => (
           <h3>Clients, Features, &amp; Publications</h3>
         </div>
         <div className="col-xs-12 col-md-9">
-          <ul>
+          <div className="grid">
             {
               data.site.siteMetadata.clients.map((client, i) => {
                 return (
-                  <li key={i}>
+                  <a key={i} target="_blank" className="block col-xs-12" href={client.url}>
                     <h4>{client.name}</h4>
                     <p>{client.summary}</p>
-                    <a className="link" href={client.url}>{client.url}</a>
-                  </li>
+                  </a>
                 )
               })
             }
-          </ul>
+          </div>
         </div>
       </section>
     )}

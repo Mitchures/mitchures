@@ -16,6 +16,7 @@ const Layout = ({ children }) => (
           siteMetadata {
             title
             description
+            email
           }
         }
       }
@@ -31,9 +32,8 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Parallax speed={4} className="alpha" style={{ transform: 'rotate(45deg)' }}/>
-        <Parallax speed={8} className="beta" style={{ transform: 'rotate(45deg)' }}/>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Parallax speed={4} className="orb" style={{ transform: 'rotate(45deg)' }}/>
+        <Header siteTitle={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />
         <main className="content">
           {children}
         </main>

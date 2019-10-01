@@ -22,12 +22,7 @@ body {
     }
 }
 
-figcaption,
-figure,
-footer,
-header,
-main,
-nav {
+figcaption, figure, footer, header, main, nav, section {
     display: block;
 }
 
@@ -54,8 +49,7 @@ img {
 }
 
 p,
-figure,
-img {
+figure {
     padding: 0;
     margin: 0 0 1.45rem 0;
 }
@@ -96,6 +90,30 @@ ul {
 .introduction {
     opacity: 0;
     animation: intro 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.block {
+    margin: 1.2rem;
+    min-height: 140px;
+    backdrop-filter: blur(25px) saturate(120%);
+    background: $block-bg;
+    border-radius: 1.5rem;
+    padding: 1.5rem !important;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    h4 { margin: 0 0 0.4rem; }
+    p { margin: 0; }
+    .block-image {
+        border-radius: 1.2rem;
+        width: 100%;
+        min-width: 90px;
+        max-height: 90px;
+    }
+    .block-content {
+        margin-left: 1.5rem;
+    }
+    &:hover {
+        transform: scale(1.05) translateZ(0px);
+    }
 }
 
 #hero {
@@ -139,29 +157,9 @@ figure {
             color: $secondary-text;
         }
     }
-    &.work-item {
-        margin-bottom: 1.2rem;
-        min-height: 140px;
-        backdrop-filter: blur(25px) saturate(120%);
-        background: rgba(240, 240, 240, 0.5);
-        border-radius: 1.5rem;
-        padding: 1.5rem;
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-        &:hover {
-            transform: scale(1.05) translateZ(0px);
-        }
-        figcaption {
-            h3 {
-                margin: 0px 0px 0.4rem;
-            }
-            p {
-                margin: 0;
-            }
-        }
-    }
 }
 
-.alpha {
+.orb {
     position: absolute;
     z-index: -1;
     display: block;
@@ -171,24 +169,16 @@ figure {
     height: 85vw;
     border-radius: 50%;
     opacity: 0.5;
-    background-image: $gradient-cool;
-}
-
-.beta {
-    position: absolute;
-    width: 50vw;
-    height: 50vw;
-    opacity: 0.5;
     background-image: $gradient-warm;
-    border-radius: 12px;
-    z-index: -1;
-    top: 10vh;
-    left: 0;
 }
 
 footer {
     padding: 1rem 0;
     text-align: center !important;
+    p {
+        color: $footer-text;
+        font-size: 16px;
+    }
 }
 
 .social {
@@ -203,6 +193,8 @@ footer {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    color: $footer-text;
+    font-size: 16px;
     &::before {
         @include pseudo();
         left: 0;
@@ -233,8 +225,18 @@ footer {
     }
 }
 
+@media (min-width: $sm) {
+    nav .grid > [class*="col-"] {
+        padding: 0.25rem 1rem;
+    }
 
-@media (min-width: 62rem) {
+    nav ul {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: $md) {
     body {
         font-size: 1.2rem;
     }
@@ -256,21 +258,29 @@ footer {
         font-size: 1.5rem;
     }
 
-    .logo {
-        display: block;
-        width: 60px;
-        height: 60px;
-    }
-
     .media {
         width: 60px;
         height: 60px;
     }
 
-    .media:hover .logo-content {
-        opacity: 1;
-        transform: translateX(4.5rem);
-        transition: transform 200ms ease, opacity 300ms ease;
+    .media:hover {
+        .logo {
+            opacity: 1;
+            transition: transform 200ms ease, opacity 300ms ease;
+        }
+        .logo-content {
+            opacity: 1;
+            transform: translateX(4.5rem);
+            transition: transform 200ms ease, opacity 300ms ease;
+        }
+    }
+
+    .logo {
+        display: block;
+        width: 60px;
+        height: 60px;
+        opacity: .75;
+        transition: transform 300ms ease, opacity 150ms ease;
     }
 
     .logo-content {
@@ -279,10 +289,6 @@ footer {
         position: absolute;
         transform: translateX(3rem);
         transition: transform 300ms ease, opacity 150ms ease;
-    }
-
-    .work-item {
-        margin-bottom: 0 !important;
     }
 
     #hero {
@@ -296,17 +302,11 @@ footer {
             margin: 0 0 1.5rem 0;
         }
     }
-    .alpha {
-        top: -14vh;
-        left: 62vw;
-        width: 40vw;
-        height: 40vw;
-    }
-    .beta {
-        top: 0;
-        left: 0;
-        width: 40vw;
-        height: 40vw;
+    .orb {
+        top: -25vh;
+        left: 32vw;
+        width: 80vw;
+        height: 80vw;
     }
 }
 

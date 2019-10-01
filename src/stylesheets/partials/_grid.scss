@@ -1,42 +1,89 @@
+$grid-columns: 12;
+
+$sm: 48rem;
+$md: 62rem;
+$lg: 75rem;
+
 .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   > [class*="col-"] {
     display: block;
   }
 }
 
-.col-xs-5 {
-  flex-basis: 41.66667%;
-  max-width: 41.66667%;
+.first {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.col-xs-7 {
-  flex-basis: 58.33333%;
-  max-width: 58.33333%;
+.last {
+  -webkit-box-ordinal-group: 13;
+  -ms-flex-order: 12;
+  order: 12;
 }
 
-.col-xs-12 {
-  flex-basis: 100%;
-  max-width: 100%;
+.align-top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
-@media (min-width: 62rem) {
-  .grid > [class*="col-"] {
-    padding: 1rem;
+.align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.align-bottom {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+}
+
+@for $i from 1 through $grid-columns {
+  .col-xs-#{$i} {
+    -ms-flex-preferred-size: $i / $grid-columns * 100%;
+    flex-basis: $i / $grid-columns * 100%;
+    max-width: $i / $grid-columns * 100%;
   }
-  .col-md-3 {
-    flex-basis: 25%;
-    max-width: 25%;
+}
+
+@media (min-width: $sm) {
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      -ms-flex-preferred-size: $i / $grid-columns * 100%;
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
+    }
   }
-  .col-md-6 {
-    flex-basis: 50%;
-    max-width: 50%;
+}
+
+@media (min-width: $md) {
+  @for $i from 1 through $grid-columns {
+    .col-md-#{$i} {
+      -ms-flex-preferred-size: $i / $grid-columns * 100%;
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
+    }
   }
-  .col-md-9 {
-    flex-basis: 75%;
-    max-width: 75%;
+}
+
+@media (min-width: $lg) {
+  @for $i from 1 through $grid-columns {
+    .col-lg-#{$i} {
+      -ms-flex-preferred-size: $i / $grid-columns * 100%;
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
+    }
   }
 }
 
@@ -50,31 +97,38 @@
       max-width: 100%;
     }
   }
-  .col-xs-5 {
-    grid-column-start: span 5;
-    grid-column-end: span 5;
-  }
-  .col-xs-7 {
-    grid-column-start: span 7;
-    grid-column-end: span 7;
-  }
-  .col-xs-12 {
-    grid-column-start: span 12;
-    grid-column-end: span 12;
+
+  @for $i from 1 through $grid-columns {
+    .col-xs-#{$i} {
+      grid-column-start: span #{$i};
+      grid-column-end: span #{$i};
+    }
   }
 
-  @media (min-width: 62rem) {
-    .col-md-3 {
-      grid-column-start: span 3;
-      grid-column-end: span 3;
+  @media(min-width: $sm) {
+    @for $i from 1 through $grid-columns {
+      .col-sm-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
     }
-    .col-md-6 {
-      grid-column-start: span 6;
-      grid-column-end: span 6;
+  }
+
+  @media(min-width: $md) {
+    @for $i from 1 through $grid-columns {
+      .col-md-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
     }
-    .col-md-9 {
-      grid-column-start: span 9;
-      grid-column-end: span 9;
+  }
+
+  @media(min-width: $lg) {
+    @for $i from 1 through $grid-columns {
+      .col-lg-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
     }
   }
 }

@@ -46,14 +46,14 @@ const Work = () => (
           data.site.siteMetadata.projects.map((project, i) => {
             return (
               <div key={i} className="col-xs-12 col-md-6">
-                <a href={project.url} rel="noopener noreferrer">
-                  <figure className="work-item">
-                    {/* <Img className="cover-art" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/> */}
-                    <figcaption>
-                      <h3>{project.name}</h3>
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <div className="block grid">
+                    <Img className="block-image col-xs-3" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/>
+                    <div className="block-content col-xs-9">
+                      <h4>{project.name}</h4>
                       <p>{project.description}</p>
-                    </figcaption>
-                  </figure>
+                    </div>
+                  </div>
                 </a>
               </div>
             )

@@ -3,6 +3,7 @@ module.exports = {
     title: `Mitchures`,
     description: `I'm Mitchell Hollander, an exuberant software developer & creative photographer based in Nashville, Tennessee.`,
     author: `Mitchell Hollander`,
+    email: `MitchellSHollander@gmail.com`,
     social: [
       {
         name: `Instagram`,

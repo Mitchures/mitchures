@@ -1,4 +1,4 @@
-nav .grid>[class*="column-"] {
+nav .grid>[class*="col-"] {
   padding: 0 1rem;
 }
 
@@ -7,21 +7,18 @@ nav {
   padding: 1.5rem 0;
   width: 100%;
   span {
-    letter-spacing: .5rem;
-    text-transform: uppercase;
-    margin-left: .5rem;
     font-weight: 900;
     color: $primary-text;
-    font-family: 'San Francisco Heavy', sans-serif;
+    font-family: 'San Francisco Bold', sans-serif;
   }
   ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
     li {
-      &:nth-child(2) {
+      &:last-child {
         margin: 0;
       }
       a {
@@ -29,7 +26,8 @@ nav {
         display: inline-block;
         overflow: hidden;
         letter-spacing: .05rem;
-        font-family: 'San Francisco Regular', sans-serif;
+        color: $alt-text;
+        font-family: 'San Francisco Semibold', sans-serif;
         &::before {
           @include pseudo();
           left: 0;
@@ -42,6 +40,7 @@ nav {
           transition: all 0.3s ease;
         }
         &:hover {
+          color: $primary-text;
           &::before {
             visibility: visible;
             transform: translateX(0);

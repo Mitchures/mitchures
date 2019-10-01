@@ -3,12 +3,12 @@ import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Image from "../components/image"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, email }) => (
   <header>
     <nav>
       <div className="container">
         <div className="grid">
-          <div className="col-xs-7 col-md-9">
+          <div className="col-xs-12 col-sm-6">
             <figure className="media">
               <div className="logo">
                 <AnchorLink href="/">
@@ -20,13 +20,16 @@ const Header = ({ siteTitle }) => (
               </figcaption>
             </figure>
           </div>
-          <div className="col-xs-5 col-md-3">
+          <div className="col-xs-12 col-sm-6">
             <ul>
               <li>
                 <AnchorLink href="#work">Work</AnchorLink>
               </li>
               <li>
                 <AnchorLink href="#about">About</AnchorLink>
+              </li>
+              <li>
+                <AnchorLink href={"mailto:" + email}>Contact</AnchorLink>
               </li>
             </ul>
           </div>

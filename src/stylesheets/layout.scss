@@ -109,7 +109,7 @@ ul {
         max-height: 90px;
     }
     .block-content {
-        margin-left: 1.5rem;
+        //margin-left: 1.5rem;
     }
     &:hover {
         transform: scale(1.05) translateZ(0px);
@@ -226,9 +226,9 @@ footer {
 }
 
 @media (min-width: $sm) {
-    nav .grid > [class*="col-"] {
-        padding: 0.25rem 1rem;
-    }
+    //nav .grid > [class*="col-"] {
+    //    padding: 0.25rem 1rem;
+    //}
 
     nav ul {
         justify-content: flex-end;

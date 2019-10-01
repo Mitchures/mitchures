@@ -103,7 +103,7 @@ const About = () => (
             {
               data.site.siteMetadata.clients.map((client, i) => {
                 return (
-                  <a key={i} target="_blank" className="block col-xs-12" href={client.url}>
+                  <a key={i} target="_blank" rel="noopener noreferrer" className="block col-xs-12" href={client.url}>
                     <h4>{client.name}</h4>
                     <p>{client.summary}</p>
                   </a>

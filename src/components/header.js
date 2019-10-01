@@ -29,7 +29,7 @@ const Header = ({ siteTitle, email }) => (
                 <AnchorLink href="#about">About</AnchorLink>
               </li>
               <li>
-                <AnchorLink href={"mailto:" + email}>Contact</AnchorLink>
+                <a href={"mailto:" + email}>Contact</a>
               </li>
             </ul>
           </div>

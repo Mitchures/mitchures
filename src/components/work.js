@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 const Work = () => (
   <StaticQuery

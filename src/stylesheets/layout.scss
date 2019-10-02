@@ -2,6 +2,7 @@
 @import 'partials/variables';
 @import 'partials/typography';
 @import 'partials/grid';
+@import 'partials/theme-toggle';
 @import 'partials/nav';
 
 * {
@@ -16,6 +17,53 @@ body {
     margin: 0;
     background: $bg;
     color: $primary-text;
+    &.dark-mode {
+        background: #000;
+        color: #fff;
+        h1, h2, h3, h4 {
+            color: #fff;
+        }
+        .logo-content {
+            span {
+                color: #fff;
+            }
+        }
+        .block {
+            background: rgba(75, 75, 75, 0.5);
+        }
+        .orb {
+            background-image: $gradient-cool;
+        }
+        nav {
+            ul {
+                li {
+                    a {
+                        color: rgba(240, 240, 240, 0.4);
+                        &:hover {
+                            color: #fff;
+                        }
+                        &::before {
+                            background-image: $gradient-cool;
+                        }
+                    }
+                }
+            }
+        }
+        .link {
+            color: rgba(240, 240, 240, 0.4);
+            &:hover {
+                color: #fff;
+            }
+            &::after {
+                background-image: $gradient-cool;
+            }
+        }
+        footer {
+            p {
+                color: rgba(240, 240, 240, 0.4);
+            }
+        }
+    }
     > div {
         position: relative;
         overflow-x: hidden;

@@ -107,8 +107,17 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         icon: `src/images/mitchures-favicon-transparent.png`,
-      },
+      }
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+        classNameDark: "dark-mode",
+        classNameLight: "light-mode",
+        storageKey: "darkMode",
+        minify: true,
+      }
+    }
   ],
 }

@@ -5,7 +5,7 @@ import { graphql, StaticQuery } from "gatsby"
 const Header = () => (
   <StaticQuery
     query={graphql`
-          query HeaderSiteDescriptionQuery {
+          query SiteDescriptionQuery {
             site {
               siteMetadata {
                 description

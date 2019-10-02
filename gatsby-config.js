@@ -100,12 +100,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `mitchures`,
+        short_name: `mitchures`,
         start_url: `/`,
-        display: `minimal-ui`,
-        icon: `src/images/m-icon.png`,
+        display: `standalone`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
+        icon: `src/images/mitchures-favicon-transparent.png`,
       },
-    }
+    },
+    `gatsby-plugin-offline`
   ],
 }

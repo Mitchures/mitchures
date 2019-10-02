@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Skills = () => (
-    <section id="skills">
+    <section id="skills" className="section-block">
         <div className="container">
             <div className="grid">
                 <div className="col-xs-12 col-md-3">

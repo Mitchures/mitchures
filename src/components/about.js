@@ -1,7 +1,7 @@
 import React from 'react'
 
 const About = () => (
-  <section id="about">
+  <section id="about" className="section-block">
     <div className="container">
       <div className="grid">
         <div className="col-xs-12 col-md-3">

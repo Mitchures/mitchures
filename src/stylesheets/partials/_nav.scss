@@ -23,7 +23,7 @@ nav {
         position: relative;
         display: inline-block;
         overflow: hidden;
-        color: $alt-text;
+        color: $link-text;
         &::before {
           @include pseudo();
           left: 0;

@@ -18,49 +18,61 @@ body {
     background: $bg;
     color: $primary-text;
     &.dark-mode {
-        background: #000;
-        color: #fff;
+        background: $dark-bg;
+        color: $dark-primary-text;
         h1, h2, h3, h4 {
-            color: #fff;
+            color: $dark-primary-text;
         }
         .logo-content {
             span {
-                color: #fff;
+                color: $dark-primary-text;
             }
         }
         .block {
-            background: rgba(75, 75, 75, 0.5);
+            background: $dark-block-bg;
+            .block-image {
+                opacity: .75;
+            }
+        }
+        .section-block {
+            background: $dark-block-bg;
         }
         .orb {
-            background-image: $gradient-cool;
+            background-image: $gradient-mystic;
+        }
+        .diamond {
+            background-image: $gradient-mystic;
+        }
+        .sphere {
+            background-image: $gradient-mystic;
         }
         nav {
             ul {
                 li {
                     a {
-                        color: rgba(240, 240, 240, 0.4);
+                        color: $dark-link-text;
                         &:hover {
-                            color: #fff;
+                            color: $dark-primary-text;
                         }
                         &::before {
-                            background-image: $gradient-cool;
+                            background-image: $gradient-mystic;
                         }
                     }
                 }
             }
         }
         .link {
-            color: rgba(240, 240, 240, 0.4);
+            color: $dark-link-text;
             &:hover {
                 color: #fff;
             }
             &::after {
-                background-image: $gradient-cool;
+                background-image: $gradient-mystic;
             }
         }
         footer {
             p {
-                color: rgba(240, 240, 240, 0.4);
+                color: $dark-footer-text;
             }
         }
     }
@@ -68,6 +80,10 @@ body {
         position: relative;
         overflow-x: hidden;
     }
+}
+
+h1, h2, h3, h4 {
+    color: $primary-text;
 }
 
 figcaption, figure, footer, header, main, nav, section {
@@ -132,7 +148,7 @@ ul {
 }
 
 .introduction {
-    padding: 9rem 0 2rem;
+    padding: 9rem 0;
 }
 
 .block {
@@ -148,11 +164,11 @@ ul {
     .block-image {
         border-radius: 1.2rem;
         width: 100%;
-        min-width: 90px;
-        max-height: 90px;
+        height: 100%;
+        max-height: 65px;
     }
     .block-content {
-        //margin-left: 1.5rem;
+        margin-left: .5rem;
     }
     &:hover {
         transform: scale(1.05) translateZ(0px);
@@ -170,6 +186,11 @@ ul {
     }
 }
 
+.section-block {
+    backdrop-filter: blur(25px) saturate(120%);
+    background: $block-bg;
+}
+
 figure {
     margin: 0;
     figcaption {
@@ -185,13 +206,40 @@ figure {
     z-index: -1;
     display: block;
     top: -5vh;
-    left: 40vw;
-    width: 85vw;
-    height: 85vw;
+    left: 15vw;
+    width: 150vw;
+    height: 150vw;
     border-radius: 50%;
     opacity: 0.5;
     background-image: $gradient-warm;
 }
+
+.diamond {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    top: 240vh;
+    left: -30vw;
+    width: 100vw;
+    height: 100vw;
+    opacity: 0.5;
+    border-radius: 5%;
+    background-image: $gradient-warm;
+}
+
+.sphere {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    top: 440vh;
+    left: 15vw;
+    width: 100vw;
+    height: 100vw;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-image: $gradient-warm;
+}
+
 
 footer {
     padding: 1rem 0;
@@ -292,6 +340,11 @@ footer {
         transform: translateX(3rem);
         transition: transform 300ms ease, opacity 150ms ease;
     }
+    .block {
+        .block-image {
+            max-height: 90px;
+        }
+    }
 }
 
 @media (min-width: $md) {
@@ -303,7 +356,7 @@ footer {
     }
 
     .introduction {
-        padding: 13rem 0 0rem;
+        padding: 13rem 0;
     }
 
     h1 {
@@ -324,6 +377,13 @@ footer {
         font-size: 1.5rem;
     }
 
+    .block {
+        .block-image {
+            width: 100%;
+            max-height: 180px;
+        }
+    }
+
     #about, #work, #skills, #features {
         h2 {
             margin: 1.5rem 0 2.5rem 0;
@@ -337,6 +397,19 @@ footer {
         left: 32vw;
         width: 80vw;
         height: 80vw;
+    }
+
+    .diamond {
+        top: 180vh;
+        left: 4vw;
+        width: 45vw;
+        height: 45vw;
+    }
+    .sphere {
+        top: 320vh;
+        left: 50vw;
+        width: 40vw;
+        height: 40vw;
     }
 }
 

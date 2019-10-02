@@ -5,53 +5,17 @@ $md: 62rem;
 $lg: 75rem;
 
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   > [class*="col-"] {
     display: block;
+    padding: 1rem;
   }
-}
-
-.first {
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.last {
-  -webkit-box-ordinal-group: 13;
-  -ms-flex-order: 12;
-  order: 12;
-}
-
-.align-top {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-}
-
-.align-center {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.align-bottom {
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: end;
 }
 
 @for $i from 1 through $grid-columns {
   .col-xs-#{$i} {
-    -ms-flex-preferred-size: $i / $grid-columns * 100%;
     flex-basis: $i / $grid-columns * 100%;
     max-width: $i / $grid-columns * 100%;
   }
@@ -60,7 +24,6 @@ $lg: 75rem;
 @media (min-width: $sm) {
   @for $i from 1 through $grid-columns {
     .col-sm-#{$i} {
-      -ms-flex-preferred-size: $i / $grid-columns * 100%;
       flex-basis: $i / $grid-columns * 100%;
       max-width: $i / $grid-columns * 100%;
     }
@@ -70,7 +33,6 @@ $lg: 75rem;
 @media (min-width: $md) {
   @for $i from 1 through $grid-columns {
     .col-md-#{$i} {
-      -ms-flex-preferred-size: $i / $grid-columns * 100%;
       flex-basis: $i / $grid-columns * 100%;
       max-width: $i / $grid-columns * 100%;
     }
@@ -80,7 +42,6 @@ $lg: 75rem;
 @media (min-width: $lg) {
   @for $i from 1 through $grid-columns {
     .col-lg-#{$i} {
-      -ms-flex-preferred-size: $i / $grid-columns * 100%;
       flex-basis: $i / $grid-columns * 100%;
       max-width: $i / $grid-columns * 100%;
     }

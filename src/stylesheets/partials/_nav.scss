@@ -1,10 +1,10 @@
-//nav .grid>[class*="col-"] {
-//  padding: 0 1rem;
-//}
+nav .grid > [class*="col-"] {
+  padding: 0 1rem;
+}
 
 nav {
   position: absolute;
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
   width: 100%;
   span {
     color: $primary-text;
@@ -23,7 +23,6 @@ nav {
         position: relative;
         display: inline-block;
         overflow: hidden;
-        letter-spacing: .05rem;
         color: $alt-text;
         &::before {
           @include pseudo();

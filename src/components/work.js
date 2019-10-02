@@ -41,24 +41,31 @@ const Work = () => (
           }
         `}
     render={data => (
-      <section id="work" className="grid">
-        {
-          data.site.siteMetadata.projects.map((project, i) => {
-            return (
-              <div key={i} className="col-xs-12 col-md-6">
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  <div className="block grid">
-                    {/*<Img className="block-image col-xs-3" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/>*/}
-                    <div className="block-content col-xs-12">
-                      <h4>{project.name}</h4>
-                      <p>{project.description}</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            )
-          })
-        }
+      <section id="work">
+        <div className="container">
+          <div className="grid">
+            <div className="col-xs-12 col-md-3">
+              <h3>Software Work</h3>
+            </div>
+            <div className="col-xs-12 col-md-9">
+              {
+                data.site.siteMetadata.projects.map((project, i) => {
+                  return (
+                    <a key={i} href={project.url} target="_blank" rel="noopener noreferrer">
+                      <div className="block grid">
+                        {/*<Img className="block-image col-xs-3" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/>*/}
+                        <div className="block-content col-xs-12">
+                          <h4>{project.name}</h4>
+                          <p>{project.description}</p>
+                        </div>
+                      </div>
+                    </a>
+                  )
+                })
+              }
+            </div>
+          </div>
+        </div>
       </section>
     )}
   />

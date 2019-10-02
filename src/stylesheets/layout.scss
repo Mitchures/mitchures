@@ -59,15 +59,15 @@ ul {
     padding: 0;
     list-style: none outside none;
     li {
-        margin: 0 1.75rem 0 0;
+        margin: 0 2rem 0 0;
     }
 }
 
 .container {
+    max-width: 76rem;
     margin: auto;
-    padding: 0 2rem;
-    max-width: 85rem;
     width: 100%;
+    padding: 0 1rem;
 }
 
 .media {
@@ -83,17 +83,12 @@ ul {
     position: relative;
 }
 
-.content {
-    padding: 1rem 0;
-}
-
 .introduction {
-    opacity: 0;
-    animation: intro 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    padding: 9rem 0 2rem;
 }
 
 .block {
-    margin: 1.2rem;
+    margin: 0 0 1.2rem 0;
     min-height: 140px;
     backdrop-filter: blur(25px) saturate(120%);
     background: $block-bg;
@@ -116,36 +111,14 @@ ul {
     }
 }
 
-#hero {
-    height: 100vh;
-    justify-items: center;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-#work {
-    margin: 0 0 3rem 0;
-    padding: 0 0 2rem 0;
-    p {
-        color: $secondary-text;
-    }
-}
-
-#about {
-    margin: 2rem 0 0;
+#about .container, #work .container, #skills .container, #features .container {
+    padding: 3rem 1rem;
     h2 {
         margin: 1.5rem 0 2rem 0;
-    }
-    h3 {
-        margin: 1.5rem 0 1.5rem 0;
     }
     p {
         color: $secondary-text;
         margin: 0 0 0.75rem 0;
-    }
-    a {
-        margin: 0 0 1.45rem 0;
     }
 }
 
@@ -226,36 +199,17 @@ footer {
 }
 
 @media (min-width: $sm) {
-    //nav .grid > [class*="col-"] {
-    //    padding: 0.25rem 1rem;
-    //}
+    nav .grid > [class*="col-"] {
+       padding: 0.25rem 1rem;
+    }
 
     nav ul {
         justify-content: flex-end;
         flex-wrap: nowrap;
     }
-}
 
-@media (min-width: $md) {
-    body {
-        font-size: 1.2rem;
-    }
-    nav {
-        padding: 2rem 0;
-    }
-    h1 {
-        font-size: 3.75rem;
-        max-width: 100%;
-        width: 68rem;
-    }
-    h2 {
-        font-size: 2.625rem;
-    }
-    h3 {
-        font-size: 1.75rem;
-    }
-    h4 {
-        font-size: 1.5rem;
+    ul li {
+        margin: 0 2.5rem 0 0;
     }
 
     .media {
@@ -290,11 +244,39 @@ footer {
         transform: translateX(3rem);
         transition: transform 300ms ease, opacity 150ms ease;
     }
+}
 
-    #hero {
-        height: 90vh;
+@media (min-width: $md) {
+    body {
+        font-size: 1.2rem;
     }
-    #about {
+    nav {
+        padding: 2rem 0;
+    }
+
+    .introduction {
+        padding: 13rem 0 0rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        max-width: 50rem;
+    }
+
+    h2 {
+        margin-top: 0.85rem;
+        font-size: 2.125rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    #about, #work, #skills, #features {
         h2 {
             margin: 1.5rem 0 2.5rem 0;
         }

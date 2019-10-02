@@ -1,42 +1,30 @@
-import React from "react"
+import React from 'react'
 
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import Image from "../components/image"
+import { graphql, StaticQuery } from "gatsby"
 
-const Header = ({ siteTitle, email }) => (
-  <header>
-    <nav>
-      <div className="container">
-        <div className="grid">
-          <div className="col-xs-12 col-sm-6">
-            <figure className="media">
-              <div className="logo">
-                <AnchorLink href="/">
-                  <Image alt="Mitchures"/>
-                </AnchorLink>
-              </div>
-              <figcaption className="logo-content">
-                <span>{siteTitle}</span>
-              </figcaption>
-            </figure>
-          </div>
-          <div className="col-xs-12 col-sm-6">
-            <ul>
-              <li>
-                <AnchorLink href="#work">Work</AnchorLink>
-              </li>
-              <li>
-                <AnchorLink href="#about">About</AnchorLink>
-              </li>
-              <li>
-                <a href={"mailto:" + email}>Contact</a>
-              </li>
-            </ul>
+const Header = () => (
+  <StaticQuery
+    query={graphql`
+          query SiteDescriptionQuery {
+            site {
+              siteMetadata {
+                description
+              }
+            }
+          }
+        `}
+    render={data => (
+      <header className="introduction">
+        <div className="container">
+          <div className="grid">
+            <div className="col-xs-12 col-sm-12 col-md-10">
+              <h1>{data.site.siteMetadata.description}</h1>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </header>
+    )}
+  />
 )
 
 export default Header

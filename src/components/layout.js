@@ -4,9 +4,8 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 import Parallax from 'react-rellax'
 
-import Header from "./header"
+import Nav from "./nav"
 import "../stylesheets/layout.scss"
-import Footer from "./footer"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -22,7 +21,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div>
+      <>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -33,12 +32,9 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Parallax speed={4} className="orb" style={{ transform: 'rotate(45deg)' }}/>
-        <Header siteTitle={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />
-        <main className="content">
-          {children}
-        </main>
-        <Footer/>
-      </div>
+        <Nav siteTitle={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />
+        {children}
+      </>
     )}
   />
 )

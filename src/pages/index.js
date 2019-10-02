@@ -1,17 +1,21 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Hero from "../components/hero"
+import Header from "../components/header"
 import About from "../components/about"
+import Skills from "../components/skills"
+import Features from "../components/features"
 import Work from '../components/work'
+import Footer from "../components/footer"
 
 const Index = () => (
   <Layout>
-    <div className="container">
-      <Hero/>
-      <Work/>
-      <About/>
-    </div>
+    <Header/>
+    <About/>
+    <Work/>
+    <Skills/>
+    <Features/>
+    <Footer/>
   </Layout>
 )
 

@@ -98,6 +98,7 @@ $heavy: 800;
 $black: 900;
 
 body {
+  margin: 0;
   font-family: "San Francisco Compact Rounded", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: $regular;
   font-size: 1rem;
@@ -110,6 +111,7 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
@@ -130,10 +132,6 @@ nav {
   }
 }
 
-.introduction {
-  font-weight: $bold;
-}
-
 ul {
   li {
     h4 {
@@ -150,14 +148,14 @@ h1 {
 }
 
 h2 {
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 1.5rem 0 0;
   padding: 0;
   font-size: 2rem;
   line-height: 1.1;
 }
 
 h3 {
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 1.25rem 0 0.5rem;
   padding: 0;
   font-size: 1.5rem;
   line-height: 1.1;

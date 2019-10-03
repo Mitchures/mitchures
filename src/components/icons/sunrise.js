@@ -1,12 +1,12 @@
 import React from "react"
 
 const Sunrise = (props) => {
-  const { size } = props;
-  const handleClick = () => props.onClick && props.onClick('light');
+
+  const handleClick = () => props.onClick && props.onClick('dark');
 
   return (
     <div
-      className={`theme-toggle theme-toggle--sunrise -size-${size}`}
+      className="theme-toggle theme-toggle--sunrise"
       onClick={handleClick}
     >
       <svg className="icon" width="100%" viewBox="0 0 72 48">

@@ -1,25 +1,16 @@
 import React from "react"
 
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import Image from "./image"
 import useDarkMode from "use-dark-mode"
 import Sunrise from "../components/icons/sunrise"
 import Sunset from "../components/icons/sunset"
+import Mitchures from "../components/icons/mitchures"
 
 const Nav = ({ siteTitle, email }) => {
 
   const darkMode = useDarkMode();
 
   const handleTheme = theme => theme === "light" ? darkMode.enable() : darkMode.disable();
-
-  const renderThemeToggle = (size) => {
-    return (
-      <div className="nav__themes">
-        {!darkMode.value && <Sunrise isActive={!darkMode.value} size={size} onClick={handleTheme} />}
-        {darkMode.value && <Sunset isActive={darkMode.value} size={size} onClick={handleTheme} />}
-      </div>
-    )
-  }
 
   return (
     <nav>
@@ -29,7 +20,7 @@ const Nav = ({ siteTitle, email }) => {
             <figure className="media">
               <div className="logo">
                 <a href="/">
-                  <Image alt="Mitchures"/>
+                  <Mitchures darkMode={darkMode} />
                 </a>
               </div>
               <figcaption className="logo-content">
@@ -55,7 +46,8 @@ const Nav = ({ siteTitle, email }) => {
                 <a href={"mailto:" + email}>Contact</a>
               </li>
               <li>
-                {renderThemeToggle("s")}
+                {!darkMode.value && <Sunset isActive={!darkMode.value} onClick={handleTheme} />}
+                {darkMode.value && <Sunrise isActive={darkMode.value} onClick={handleTheme} />}
               </li>
             </ul>
           </div>

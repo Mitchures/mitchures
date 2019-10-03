@@ -1,12 +1,11 @@
 import React from "react"
 
 const Sunset = (props) => {
-  const { size } = props;
 
-  const handleClick = () => props.onClick && props.onClick('dark');
+  const handleClick = () => props.onClick && props.onClick('light');
 
   return (
-    <div className={`theme-toggle theme-toggle--sunset -size-${size}`} onClick={handleClick}>
+    <div className="theme-toggle theme-toggle--sunset" onClick={handleClick}>
       <svg
         className="icon icon--sunset"
         width="100%"

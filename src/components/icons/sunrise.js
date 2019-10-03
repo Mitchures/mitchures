@@ -1,8 +1,8 @@
 import React from "react"
 
-const Sunrise = (props) => {
+const Sunrise = ({onClick}) => {
 
-  const handleClick = () => props.onClick && props.onClick('dark');
+  const handleClick = () => onClick && onClick('dark');
 
   return (
     <div

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 const Work = () => (
   <StaticQuery
@@ -53,7 +53,7 @@ const Work = () => (
                   return (
                     <a key={i} href={project.url} target="_blank" rel="noopener noreferrer">
                       <div className="block grid">
-                        <Img className="block-image col-xs-3" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/>
+                        {/*<Img className="block-image col-xs-3" fluid={data[`${project.cover}`].childImageSharp.fluid} alt={project.name}/>*/}
                         <div className="block-content col-xs-9">
                           <h4>{project.name}</h4>
                           <p>{project.description}</p>

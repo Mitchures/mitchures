@@ -5,6 +5,7 @@ import useDarkMode from "use-dark-mode"
 import Sunrise from "../components/icons/sunrise"
 import Sunset from "../components/icons/sunset"
 import Mitchures from "../components/icons/mitchures"
+// import Email from "../components/icons/email"
 
 const Nav = ({ siteTitle, email }) => {
 
@@ -43,7 +44,7 @@ const Nav = ({ siteTitle, email }) => {
                 <AnchorLink href="#features">Features</AnchorLink>
               </li>
               <li>
-                <a href={"mailto:" + email}>Contact</a>
+                {/*<Email address={email} />*/}
               </li>
               <li>
                 {!darkMode.value && <Sunset isActive={!darkMode.value} onClick={handleTheme} />}

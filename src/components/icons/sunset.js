@@ -1,8 +1,8 @@
 import React from "react"
 
-const Sunset = (props) => {
+const Sunset = ({onClick}) => {
 
-  const handleClick = () => props.onClick && props.onClick('light');
+  const handleClick = () => onClick && onClick('light');
 
   return (
     <div className="theme-toggle theme-toggle--sunset" onClick={handleClick}>

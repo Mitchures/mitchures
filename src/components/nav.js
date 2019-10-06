@@ -46,10 +46,10 @@ const Nav = ({ siteTitle, email }) => {
               <li>
                 {/*<Email address={email} />*/}
               </li>
-              <li>
-                {!darkMode.value && <Sunset isActive={!darkMode.value} onClick={handleTheme} />}
-                {darkMode.value && <Sunrise isActive={darkMode.value} onClick={handleTheme} />}
-              </li>
+              {/*<li>*/}
+                {/*{!darkMode.value && <Sunset isActive={!darkMode.value} onClick={handleTheme} />}*/}
+                {/*{darkMode.value && <Sunrise isActive={darkMode.value} onClick={handleTheme} />}*/}
+              {/*</li>*/}
             </ul>
           </div>
         </div>

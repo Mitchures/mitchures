@@ -469,6 +469,67 @@ footer {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background: $dark-bg;
+        color: $dark-primary-text;
+        h1, h2, h3, h4 {
+            color: $dark-primary-text;
+        }
+        nav {
+            ul {
+                li {
+                    a {
+                        color: $dark-link-text;
+                        &:hover {
+                            color: $dark-primary-text;
+                        }
+                        &::before {
+                            background-image: $gradient-mystic;
+                        }
+                    }
+                }
+            }
+        }
+        .logo-content {
+            span {
+                color: $dark-primary-text;
+            }
+        }
+        .block {
+            background: $dark-block-bg;
+            .block-image {
+                opacity: .75;
+            }
+        }
+        .section-block {
+            background: $dark-block-bg;
+        }
+        .link {
+            color: $dark-link-text;
+            &:hover {
+                color: #fff;
+            }
+            &::after {
+                background-image: $gradient-mystic;
+            }
+        }
+        #about .container, #work .container, #skills .container, #features .container {
+            p {
+                color: $dark-secondary-text;
+            }
+        }
+        .orb {
+            background-image: $gradient-mystic;
+        }
+        footer {
+            p {
+                color: $dark-footer-text;
+            }
+        }
+    }
+}
+
 @keyframes intro {
     0% {
         opacity: 0;

@@ -18,7 +18,7 @@ const Header = () => (
         <div className="container">
           <div className="grid">
             <div className="col-xs-12 col-sm-12 col-md-10">
-              <h1>{data.site.siteMetadata.description}</h1>
+              <h1 className="animated fadeInDown delay-1s">{data.site.siteMetadata.description}</h1>
             </div>
           </div>
         </div>

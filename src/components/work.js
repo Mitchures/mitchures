@@ -41,7 +41,7 @@ const Work = () => (
           }
         `}
     render={data => (
-      <section id="work">
+      <section id="work" className="animated fadeIn delay-1hs">
         <div className="container">
           <div className="grid">
             <div className="col-xs-12 col-md-3">

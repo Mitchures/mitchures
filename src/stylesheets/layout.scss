@@ -3,6 +3,7 @@
 @import 'partials/variables';
 @import 'partials/typography';
 @import 'partials/grid';
+@import 'partials/animations';
 
 // Globals
 * {
@@ -20,65 +21,6 @@ body {
     > div {
         position: relative;
         overflow-x: hidden;
-    }
-}
-
-body.dark-mode {
-    background: $dark-bg;
-    color: $dark-primary-text;
-    h1, h2, h3, h4 {
-        color: $dark-primary-text;
-    }
-    nav {
-        ul {
-            li {
-                a {
-                    color: $dark-link-text;
-                    &:hover {
-                        color: $dark-primary-text;
-                    }
-                    &::before {
-                        background-image: $gradient-mystic;
-                    }
-                }
-            }
-        }
-    }
-    .logo-content {
-        span {
-            color: $dark-primary-text;
-        }
-    }
-    .block {
-        background: $dark-block-bg;
-        .block-image {
-            opacity: .75;
-        }
-    }
-    .section-block {
-        background: $dark-block-bg;
-    }
-    .link {
-        color: $dark-link-text;
-        &:hover {
-            color: #fff;
-        }
-        &::after {
-            background-image: $gradient-mystic;
-        }
-    }
-    #about .container, #work .container, #skills .container, #features .container {
-        p {
-            color: $dark-secondary-text;
-        }
-    }
-    .orb {
-        background-image: $gradient-mystic;
-    }
-    footer {
-        p {
-            color: $dark-footer-text;
-        }
     }
 }
 
@@ -179,49 +121,6 @@ nav {
                     }
                 }
             }
-            .theme-toggle {
-                cursor: pointer;
-                &--sunrise {
-                    width: 28px;
-                }
-                &--sunset {
-                    width: 28px;
-                }
-            }
-        }
-    }
-}
-
-.dark-mode {
-    .theme-toggle {
-        &--sunrise {
-            opacity: 1;
-            .white { stroke: white; }
-            .yellow { stroke: $button-yellow; }
-        }
-        &--sunset {
-            opacity: 0.3;
-            .yellow,
-            .white {
-                stroke: $icon-gray;
-            }
-        }
-    }
-}
-
-.light-mode {
-    .theme-toggle {
-        &--sunset {
-            opacity: 1;
-            .white { stroke: white; }
-            .yellow { stroke: $button-yellow; }
-        }
-        &--sunrise {
-            opacity: 0.3;
-            .yellow,
-            .white {
-                stroke: $icon-gray;
-            }
         }
     }
 }
@@ -279,6 +178,16 @@ nav {
     p {
         color: $secondary-text;
         margin: 0 0 0.75rem 0;
+    }
+}
+
+#skills {
+    ul {
+        li {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid $skill-border-color;
+        }
     }
 }
 

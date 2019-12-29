@@ -18,9 +18,12 @@ module.exports = {
         name: `Github`,
         url: `https://github.com/mitchellsh`
       },{
+        name: `LinkedIn`,
+        url: `https://www.linkedin.com/in/mitchell-hollander-93737893`
+      },{
         name: `VSCO`,
         url: `https://vsco.co/mitchures/`
-      },
+      }
     ],
     clients: [
       {
@@ -66,15 +69,27 @@ module.exports = {
     ],
     projects: [
       {
-        name: `Otaku Ipsum`,
-        description: `Otaku-themed placeholder text generator built with Gatsby.js and React.`,
-        url: `https://otakuipsum.netlify.com/`,
+        name: `Sakura Performance Manager`,
+        description: `Sakura Performance Manager utilizes both React and Ruby on Rails in order to create a user experience that provides Managers with the ability to submit employee performance reviews.`,
+        url: `https://sakura-performance-manager.herokuapp.com/`,
         cover: `otaku`
       },
       {
         name: `Cryptocurrency Dashboard`,
         description: `Cryptocurrency Dashboard app built with Ruby on Rails using the CryptoCompare API.`,
         url: `https://crypto-comparison-dashboard.herokuapp.com/`,
+        cover: `crypto`
+      },
+      {
+        name: `Otaku Ipsum`,
+        description: `Otaku-themed placeholder text generator built with Gatsby.js and React.`,
+        url: `https://otakuipsum.netlify.com/`,
+        cover: `otaku`
+      },
+      {
+        name: `Crypto Comparison`,
+        description: `Cryptocurrency comparison app built with Gatsby.js & React using the CoinMarketCap API.`,
+        url: `https://cryptocompare.netlify.com/`,
         cover: `crypto`
       },
       {
@@ -109,15 +124,6 @@ module.exports = {
         icon: `src/images/mitchures-favicon-transparent.png`,
       }
     },
-    `gatsby-plugin-offline`,
-    {
-      resolve: "gatsby-plugin-use-dark-mode",
-      options: {
-        classNameDark: "dark-mode",
-        classNameLight: "light-mode",
-        storageKey: "darkMode",
-        minify: true,
-      }
-    }
+    `gatsby-plugin-offline`
   ],
 }

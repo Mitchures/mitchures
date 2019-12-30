@@ -1,11 +1,11 @@
 import React from 'react'
 
 const Skills = () => (
-    <section id="skills" className="section-block">
+    <section id="skills">
         <div className="container">
             <div className="grid">
                 <div className="col-xs-12 col-md-3">
-                    <h3>Software Skills</h3>
+                    <h3>Skills</h3>
                 </div>
                 <div className="col-xs-12 col-md-9">
                     {/*<p>{(new Date().getFullYear() - 2014)} years of software development experience in the following:</p>*/}

@@ -31,7 +31,7 @@ const Nav = ({ siteTitle, email }) => {
                 <AnchorLink href="#about">About</AnchorLink>
               </li>
               <li>
-                <AnchorLink href="#work">Work</AnchorLink>
+                <AnchorLink href="#work">Portfolio</AnchorLink>
               </li>
               <li>
                 <AnchorLink href="#skills">Skills</AnchorLink>

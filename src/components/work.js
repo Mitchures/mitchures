@@ -45,7 +45,7 @@ const Work = () => (
         <div className="container">
           <div className="grid">
             <div className="col-xs-12 col-md-3">
-              <h3>Software Work</h3>
+              <h3>Portfolio</h3>
             </div>
             <div className="col-xs-12 col-md-9">
               {

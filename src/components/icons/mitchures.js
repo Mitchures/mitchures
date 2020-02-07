@@ -11,8 +11,8 @@ const Mitchures = (props) => {
         <linearGradient id="linear-gradient" x1="61.85" y1="254.67" x2="327.92" y2="520.74"
                         gradientTransform="matrix(0.25, 0.71, -0.25, 0.71, 114.84, -223.96)"
                         gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor={usePrimaryColor} />
-          <stop offset="1" stopColor={useSecondaryColor} />
+          <stop offset="0" stopColor={"#f6d365"} />
+          <stop offset="1" stopColor={"#fda085"} />
         </linearGradient>
         <linearGradient id="linear-gradient-2" className="gradientPath" x1="181.96" y1="-84.98" x2="448.03" y2="181.09"
                         gradientTransform="matrix(-0.25, 0.65, 0.25, 0.65, 247.38, -27.4)"

@@ -145,11 +145,6 @@ nav {
 .block {
     margin: 0 0 1.2rem 0;
     min-height: 140px;
-    backdrop-filter: blur(25px) saturate(120%);
-    backface-visibility: hidden; // should fix flickering
-    -webkit-backface-visibility: hidden;
-    // -webkit-transform: translateZ(0);
-    // -webkit-perspective: 1000;
     background: $block-bg;
     border-radius: 1.5rem;
     padding: 1.5rem !important;
@@ -167,6 +162,11 @@ nav {
     &:hover {
         transform: scale(1.05) translateZ(0px);
     }
+}
+
+#about {
+  backdrop-filter: blur(25px) saturate(120%);
+  background: $about-bg;
 }
 
 #about .container, #work .container, #skills .container, #features .container {
@@ -425,13 +425,17 @@ footer {
                 background-image: $gradient-mystic;
             }
         }
+        #about {
+          backdrop-filter: blur(25px) saturate(120%);
+          background: $dark-about-bg;
+        }
         #about .container, #work .container, #skills .container, #features .container {
             p {
                 color: $dark-secondary-text;
             }
         }
         .orb {
-            background-image: $gradient-mystic;
+            // background-image: $gradient-mystic;
         }
         footer {
             p {

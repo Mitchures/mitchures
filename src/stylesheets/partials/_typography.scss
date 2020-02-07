@@ -101,7 +101,7 @@ body {
   margin: 0;
   font-family: "San Francisco Compact Rounded", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: $regular;
-  font-size: 1rem;
+  font-size: 1.2rem;
   word-wrap: break-word;
   line-height: 1.5;
   font-kerning: normal;
@@ -169,4 +169,8 @@ h4 {
 
 .link {
   font-weight: $semibold;
+}
+
+p {
+  letter-spacing: .009em;
 }

@@ -16,7 +16,7 @@ module.exports = {
         url: `https://www.pinterest.com/MitchellH07/`
       },{
         name: `Github`,
-        url: `https://github.com/mitchellsh`
+        url: `https://github.com/mitchures`
       },{
         name: `LinkedIn`,
         url: `https://www.linkedin.com/in/mitchell-hollander-93737893`

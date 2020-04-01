@@ -164,11 +164,6 @@ nav {
     }
 }
 
-#about {
-  backdrop-filter: blur(25px) saturate(120%);
-  background: $about-bg;
-}
-
 #about .container, #work .container, #skills .container, #features .container {
     padding: 3rem 1rem;
     h2 {
@@ -191,11 +186,6 @@ nav {
             }
         }
     }
-}
-
-.section-block {
-    backdrop-filter: blur(25px) saturate(120%);
-    background: $block-bg;
 }
 
 figure {
@@ -413,9 +403,6 @@ footer {
                 opacity: .75;
             }
         }
-        .section-block {
-            background: $dark-block-bg;
-        }
         .link {
             color: $dark-link-text;
             &:hover {
@@ -425,9 +412,12 @@ footer {
                 background-image: $gradient-mystic;
             }
         }
-        #about {
-          backdrop-filter: blur(25px) saturate(120%);
-          background: $dark-about-bg;
+        #skills {
+            ul {
+                li {
+                    border-bottom: 2px solid $dark-skill-border-color;
+                }
+            }
         }
         #about .container, #work .container, #skills .container, #features .container {
             p {

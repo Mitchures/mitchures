@@ -36,12 +36,12 @@ const Nav = ({ siteTitle, email }) => {
               <li>
                 <AnchorLink href="#skills">Skills</AnchorLink>
               </li>
-              <li>
-                <AnchorLink href="#features">Features</AnchorLink>
-              </li>
-              <li>
+              {/*<li>*/}
+                {/*<AnchorLink href="#features">Features</AnchorLink>*/}
+              {/*</li>*/}
+              {/*<li>*/}
                 {/*<Email address={email} />*/}
-              </li>
+              {/*</li>*/}
             </ul>
           </div>
         </div>

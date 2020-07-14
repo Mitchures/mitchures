@@ -16,7 +16,7 @@ const Skills = () => (
                         </li>
                         <li>
                             <h4>JavaScript Frameworks, Libraries, & State Management</h4>
-                            <p>Vue, Vuex, React, jQuery, and Lodash</p>
+                            <p>Vue, Vuex, React, and jQuery</p>
                         </li>
                         <li>
                             <h4>Static Site Generators</h4>
@@ -36,11 +36,11 @@ const Skills = () => (
                         </li>
                         <li>
                             <h4>Server-Side Frameworks & API Layers</h4>
-                            <p>Ruby on Rails, Express, Firebase, and GraphQL</p>
+                            <p>Ruby on Rails, Node, Express, Firebase, GraphQL, Thymeleaf, and Spring</p>
                         </li>
                         <li>
                             <h4>Database</h4>
-                            <p>MySQL and Mongo</p>
+                            <p>MySQL, PostgreSQL, and Mongo</p>
                         </li>
                         <li>
                             <h4>IDE/Editor</h4>
@@ -52,7 +52,7 @@ const Skills = () => (
                         </li>
                         <li>
                             <h4>Issue Tracker</h4>
-                            <p>JIRA, Redmine, and Trello</p>
+                            <p>JIRA, Redmine, Trello, and YouTrack</p>
                         </li>
                         <li>
                             <h4>Application Architectures</h4>

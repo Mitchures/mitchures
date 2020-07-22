@@ -1,9 +1,21 @@
 module.exports = {
   siteMetadata: {
     title: `Mitchures`,
-    description: `I'm Mitchell Hollander, an exuberant software developer & creative photographer based in Nashville, Tennessee.`,
+    description: `Hello, I'm Mitchell Hollander. An exuberant Software Developer based in Nashville, Tennessee.`,
     author: `Mitchell Hollander`,
     email: `MitchellSHollander@gmail.com`,
+    phrases: [
+      "Full-Stack Development",
+      "JavaScript, Ruby, Java",
+      "VueJS, Vuex, React, jQuery",
+      "GatsbyJS, Jekyll",
+      "PostgreSQL, MySQL, MongoDB",
+      "GraphQL, REST, Firebase",
+      "SASS, LESS, CSS Modules",
+      "Ruby on Rails, NodeJS, ExpressJS",
+      "Git, Subversion",
+      "Thymeleaf, Spring",
+    ],
     social: [
       {
         name: `Instagram`,

@@ -40,7 +40,7 @@ const Skills = () => (
                         </li>
                         <li>
                             <h4>Database</h4>
-                            <p>MySQL, PostgreSQL, and Mongo</p>
+                            <p>MySQL, PostgreSQL, and MongoDB</p>
                         </li>
                         <li>
                             <h4>IDE/Editor</h4>

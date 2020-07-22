@@ -1,9 +1,11 @@
 import React from 'react'
+import useDarkMode from "use-dark-mode"
 
-const Mitchures = (props) => {
+const Mitchures = () => {
 
-  const usePrimaryColor = props.darkMode.value ? "#fbc2eb" : "#f6d365"
-  const useSecondaryColor = props.darkMode.value ? "#a6c1ee" : "#fda085"
+  const { value } = useDarkMode()
+  const usePrimaryColor = value ? "#fbc2eb" : "#f6d365"
+  const useSecondaryColor = value ? "#a6c1ee" : "#fda085"
 
   return (
     <svg id="mitchures" viewBox="0 0 436 377.6">
@@ -11,8 +13,8 @@ const Mitchures = (props) => {
         <linearGradient id="linear-gradient" x1="61.85" y1="254.67" x2="327.92" y2="520.74"
                         gradientTransform="matrix(0.25, 0.71, -0.25, 0.71, 114.84, -223.96)"
                         gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor={"#f6d365"} />
-          <stop offset="1" stopColor={"#fda085"} />
+          <stop offset="0" stopColor={usePrimaryColor} />
+          <stop offset="1" stopColor={useSecondaryColor} />
         </linearGradient>
         <linearGradient id="linear-gradient-2" className="gradientPath" x1="181.96" y1="-84.98" x2="448.03" y2="181.09"
                         gradientTransform="matrix(-0.25, 0.65, 0.25, 0.65, 247.38, -27.4)"

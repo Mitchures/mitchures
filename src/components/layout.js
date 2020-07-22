@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'mitchell hollander, software development, photography' },
           ]}
         >
-          <html lang="en" />
+        <html lang="en" />
         </Helmet>
         <Parallax speed={4} className="orb animated fadeInOrb" style={{ transform: 'rotate(45deg)' }}/>
         <Nav siteTitle={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />

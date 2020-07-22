@@ -22,7 +22,7 @@ const Header = () => (
           <div className="grid">
             <div className="col-xs-12 col-sm-12 col-md-12">
               <h1>{data.site.siteMetadata.description}</h1>
-              <h3>As a passionate programmer I enjoy creating digital experiences through beautiful design and semantic code with extensive experience in the following technologies:</h3>
+              <h3>As a passionate programmer I enjoy creating digital experiences through beautiful design and semantic code with extensive knowledge of the following technologies:</h3>
               <div className="carousel">
                 <TextCarousel
                   phrases={data.site.siteMetadata.phrases}

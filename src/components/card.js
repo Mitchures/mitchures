@@ -12,7 +12,7 @@ const Card = ({ className, header, cover, description }) => {
             relativePath
             name
             childImageSharp {
-              fluid(maxWidth: 600) {
+              fluid(maxWidth: 1920) {
                 ...GatsbyImageSharpFluid
               }
             }

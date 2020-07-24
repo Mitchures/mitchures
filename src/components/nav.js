@@ -1,7 +1,7 @@
 import React from "react"
 
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import Mitchures from "../components/icons/mitchures"
+import Mitchures from "./icons/mitchures"
 
 const Nav = ({ siteTitle, email }) => {
 
@@ -29,9 +29,6 @@ const Nav = ({ siteTitle, email }) => {
               <li>
                 <AnchorLink href="#work">Portfolio</AnchorLink>
               </li>
-              {/*<li>*/}
-              {/*  <AnchorLink href="#skills">Skills</AnchorLink>*/}
-              {/*</li>*/}
               <li>
                 <a href="mailto:create@mitchures.co">Contact</a>
               </li>

@@ -71,7 +71,7 @@ class TextCarousel extends Component {
     const customClass = this.props.className || ""
 
     return (
-      <h2 className={`textCarouselContainer ${customClass}`} ref="phraseContainer" />
+      <span className={`textCarouselContainer ${customClass}`} ref="phraseContainer"/>
     )
   }
 }

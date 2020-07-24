@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mitchures`,
-    description: `Hello, I'm Mitchell Hollander. An exuberant Software Developer based in Nashville, Tennessee.`,
+    description: `Hello, I'm Mitchell Hollander. An exuberant software developer based in Nashville, Tennessee.`,
     author: `Mitchell Hollander`,
     email: `MitchellSHollander@gmail.com`,
     phrases: [
@@ -84,31 +84,31 @@ module.exports = {
         name: `Sakura Performance Manager`,
         description: `Sakura Performance Manager utilizes both React and Ruby on Rails in order to create a user experience that provides Managers with the ability to submit employee performance reviews.`,
         url: `https://sakura-performance-manager.herokuapp.com/`,
-        cover: `otaku`
+        cover: `sakura-performance-manager-alt`
       },
       {
         name: `Cryptocurrency Dashboard`,
         description: `Cryptocurrency Dashboard app built with Ruby on Rails using the CryptoCompare API.`,
         url: `https://crypto-comparison-dashboard.herokuapp.com/`,
-        cover: `crypto`
+        cover: `crypto-dashboard-alt`
       },
       {
         name: `Otaku Ipsum`,
         description: `Otaku-themed placeholder text generator built with Gatsby.js and React.`,
         url: `https://otakuipsum.netlify.com/`,
-        cover: `otaku`
+        cover: `otaku-ipsum-alt`
       },
       {
         name: `Crypto Comparison`,
         description: `Cryptocurrency comparison app built with Gatsby.js & React using the CoinMarketCap API.`,
         url: `https://cryptocompare.netlify.com/`,
-        cover: `crypto`
+        cover: `crypto-comparison-alt`
       },
       {
         name: `Maku`,
         description: `A Rails 5 Movie Search app that utilizes the Movie Database API.`,
         url: `https://maku.herokuapp.com/`,
-        cover: `maku`
+        cover: `maku-alt`
       }
     ]
   },

@@ -4,7 +4,8 @@ import useDarkMode from "use-dark-mode"
 const Mitchures = () => {
 
   // NOTE: darkMode persists if not removed from localStorage first
-  window.localStorage.removeItem("darkMode")
+  typeof window !== 'undefined' &&  window.localStorage.removeItem("darkMode")
+
   const { value } = useDarkMode()
 
   const usePrimaryColor = value ? "#fbc2eb" : "#f6d365"

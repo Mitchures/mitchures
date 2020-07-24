@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
         <html lang="en" />
         </Helmet>
         <Parallax speed={4} className="orb animated fadeInOrb" style={{ transform: 'rotate(45deg)' }}/>
-        <Nav siteTitle={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />
+        <Nav title={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />
         {children}
       </>
     )}

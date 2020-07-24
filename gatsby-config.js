@@ -3,7 +3,7 @@ module.exports = {
     title: `Mitchures`,
     description: `Hello, I'm Mitchell Hollander. An exuberant software developer based in Nashville, Tennessee.`,
     author: `Mitchell Hollander`,
-    email: `MitchellSHollander@gmail.com`,
+    email: `create@mitchures.co`,
     phrases: [
       "Full-Stack Development",
       "JavaScript, Ruby, Java",

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const About = () => (
-  <section id="about" className="section-block animated fadeIn delay-1hs">
+  <section id="about" className="animated fadeIn delay-1hs">
     <div className="container">
       <div className="grid">
         <div className="col-xs-12 col-md-3">

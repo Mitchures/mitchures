@@ -3,7 +3,7 @@ import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Mitchures from "./icons/mitchures"
 
-const Nav = ({ siteTitle, email }) => {
+const Nav = ({ title, email }) => {
 
   return (
     <nav>
@@ -13,11 +13,11 @@ const Nav = ({ siteTitle, email }) => {
             <figure className="media animated fadeIn delay-hs">
               <div className="logo">
                 <a href="/">
-                  <Mitchures />
+                  <Mitchures/>
                 </a>
               </div>
               <figcaption className="logo-content">
-                <span>{siteTitle}</span>
+                <span>{title}</span>
               </figcaption>
             </figure>
           </div>
@@ -30,7 +30,7 @@ const Nav = ({ siteTitle, email }) => {
                 <AnchorLink href="#work">Portfolio</AnchorLink>
               </li>
               <li>
-                <a href="mailto:create@mitchures.co">Contact</a>
+                <a href={`mailto:${email}`}>Contact</a>
               </li>
             </ul>
           </div>

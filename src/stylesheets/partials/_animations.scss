@@ -370,3 +370,22 @@
     opacity: 1;
   }
 }
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes pound {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

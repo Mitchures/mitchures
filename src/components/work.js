@@ -17,27 +17,6 @@ const Work = () => (
                 }
               }
             }
-            otaku: file(relativePath: { regex: "/otaku.png/" }) {
-              childImageSharp {
-                fluid(maxWidth: 640, maxHeight: 480) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            crypto: file(relativePath: { regex: "/crypto.png/" }) {
-              childImageSharp {
-                fluid(maxWidth: 640, maxHeight: 480) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            maku: file(relativePath: { regex: "/maku.png/" }) {
-              childImageSharp {
-                fluid(maxWidth: 640, maxHeight: 480) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         `}
     render={data => (
@@ -45,18 +24,18 @@ const Work = () => (
         <div className="container">
           <div className="grid">
             {
-              data.site.siteMetadata.projects.map((project, i) => {
+              data.site.siteMetadata.projects.map(({url, name, description, cover}, i) => {
                 return (
                   <div key={i} className="col-xs-12 col-md-6">
                     <a
-                      href={project.url}
+                      href={url}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Card
-                        header={project.name}
-                        description={project.description}
-                        cover={project.cover}
+                        header={name}
+                        description={description}
+                        cover={cover}
                       />
                     </a>
                   </div>

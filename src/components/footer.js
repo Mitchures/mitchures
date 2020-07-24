@@ -2,6 +2,9 @@ import React from 'react'
 
 import { graphql, StaticQuery } from "gatsby"
 
+import '../utils/fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Footer = () => (
   <StaticQuery
     query={graphql`
@@ -39,7 +42,11 @@ const Footer = () => (
                   })
                 }
               </ul>
-              <p className="copyright">&copy; {new Date().getFullYear()} Mitchell Hollander</p>
+              <p>
+                <span className="MadeWithLove">
+                  Made with <FontAwesomeIcon icon="heart" /> by Mitchell Hollander &copy; {new Date().getFullYear()}
+                </span>
+              </p>
             </div>
           </div>
         </div>

@@ -81,6 +81,12 @@ module.exports = {
     ],
     projects: [
       {
+        name: `Mitchstgram`,
+        description: `Mitchstagram is a lightweight clone of Instagram built with React and Firebase. Users are able to sign up, login, post photos, comment on posts, delete posts, and update their avatars all in realtime.`,
+        url: `https://mitchstagram.firebaseapp.com/`,
+        cover: `mitchstagram`
+      },
+      {
         name: `Sakura Performance Manager`,
         description: `Sakura Performance Manager utilizes both React and Ruby on Rails in order to create a user experience that provides Managers with the ability to submit employee performance reviews.`,
         url: `https://sakura-performance-manager.herokuapp.com/`,

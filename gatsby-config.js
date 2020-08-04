@@ -81,7 +81,7 @@ module.exports = {
     ],
     projects: [
       {
-        name: `Mitchstgram`,
+        name: `Mitchstagram`,
         description: `Mitchstagram is a lightweight clone of Instagram built with React and Firebase. Users are able to sign up, login, post photos, comment on posts, delete posts, and update their avatars all in realtime.`,
         url: `https://mitchstagram.firebaseapp.com/`,
         cover: `mitchstagram`

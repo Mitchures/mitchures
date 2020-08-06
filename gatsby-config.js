@@ -81,6 +81,12 @@ module.exports = {
     ],
     projects: [
       {
+        name: `Mitchures Pictures`,
+        description: `Mitchures Pictures is a photo gallery app displaying my photography work built in Vue.js and using Firebase for photo storage.`,
+        url: `https://mitchures-pictures.firebaseapp.com/`,
+        cover: `mitchures-pictures`
+      },
+      {
         name: `Mitchstagram`,
         description: `Mitchstagram is a lightweight clone of Instagram built with React and Firebase. Users are able to sign up, login, post photos, comment on posts, delete posts, and update their avatars all in realtime.`,
         url: `https://mitchstagram.firebaseapp.com/`,

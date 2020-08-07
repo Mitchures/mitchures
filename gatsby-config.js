@@ -83,7 +83,7 @@ module.exports = {
       {
         name: `Mitchures Pictures`,
         description: `Mitchures Pictures is a photo gallery app displaying my photography work built in Vue.js and using Firebase for photo storage.`,
-        url: `https://mitchures-pictures.firebaseapp.com/`,
+        url: `https://mitchures.pictures/`,
         cover: `mitchures-pictures`
       },
       {

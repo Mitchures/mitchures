@@ -93,6 +93,12 @@ module.exports = {
         cover: `mitchstagram`
       },
       {
+        name: `Mitchures Slack`,
+        description: `Mitchures Slack is a lightweight Slack clone built using React, React Context API, and Firebase for authentication and data storage.`,
+        url: `https://mitchures-slack.firebaseapp.com/`,
+        cover: `mitchures-slack-alt`
+      },
+      {
         name: `Sakura Performance Manager`,
         description: `Sakura Performance Manager utilizes both React and Ruby on Rails in order to create a user experience that provides Managers with the ability to submit employee performance reviews.`,
         url: `https://sakura-performance-manager.herokuapp.com/`,
@@ -145,7 +151,7 @@ module.exports = {
         display: `standalone`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
-        icon: `src/images/mitchures-favicon-transparent.png`,
+        icon: `src/images/mitchures-favicon.png`,
       }
     },
     `gatsby-plugin-offline`

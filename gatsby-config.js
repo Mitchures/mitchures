@@ -93,6 +93,12 @@ module.exports = {
         cover: `mitchstagram`
       },
       {
+        name: `Mitchoogle`,
+        description: `Mitchoogle is a lightweight clone of Google built using React, React Router, React Context API, Material UI, and a custom hook for Google's Custom Search API.`,
+        url: `https://mitchoogle-aae25.firebaseapp.com/`,
+        cover: `mitchoogle`
+      },
+      {
         name: `Mitchures Slack`,
         description: `Mitchures Slack is a lightweight Slack clone built using React, React Context API, and Firebase for authentication and data storage.`,
         url: `https://mitchures-slack.firebaseapp.com/`,

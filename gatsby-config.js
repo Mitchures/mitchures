@@ -88,7 +88,7 @@ module.exports = {
       },
       {
         name: `Mitchstagram`,
-        description: `Mitchstagram is a lightweight clone of Instagram built with React and Firebase. Users are able to sign up, login, post photos, comment on posts, delete posts, and update their avatars all in realtime.`,
+        description: `Mitchstagram is a lightweight re-imagined clone of Instagram built with React and Firebase. Users are able to sign up, login, post photos, comment on posts, delete posts, and update their avatars all in realtime.`,
         url: `https://mitchstagram.firebaseapp.com/`,
         cover: `mitchstagram`
       },
@@ -97,6 +97,12 @@ module.exports = {
         description: `Mitchoogle is a lightweight clone of Google built using React, React Router, React Context API, Material UI, and a custom hook for Google's Custom Search API.`,
         url: `https://mitchoogle-aae25.firebaseapp.com/`,
         cover: `mitchoogle`
+      },
+      {
+        name: `Hulu`,
+        description: `A lightweight clone of Hulu built using React, React Flip Move, React Text Truncate, Ant Design (for icons), Axios, and The Movie Database API.`,
+        url: `https://mitchures-hulu.firebaseapp.com/`,
+        cover: `hulu`
       },
       {
         name: `Mitchures Slack`,

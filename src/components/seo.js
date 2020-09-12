@@ -67,6 +67,18 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `apple-mobile-web-app-capable`,
+          content: `no`,
+        },
+        {
+          name: `apple-mobile-web-app-status-bar-style`,
+          content: `default`,
+        },
+        {
+          name: `apple-mobile-web-app-title`,
+          content: title,
+        },
       ].concat(meta)}
     />
   )

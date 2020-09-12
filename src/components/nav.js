@@ -4,7 +4,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Mitchures from "./icons/mitchures"
 
 const Nav = ({ title, email }) => {
-
   return (
     <nav>
       <div className="container">
@@ -13,7 +12,7 @@ const Nav = ({ title, email }) => {
             <figure className="media animated fadeIn delay-hs">
               <div className="logo">
                 <a href="/">
-                  <Mitchures/>
+                  <Mitchures />
                 </a>
               </div>
               <figcaption className="logo-content">
@@ -24,10 +23,10 @@ const Nav = ({ title, email }) => {
           <div className="col-xs-12 col-sm-6">
             <ul className="animated fadeIn delay-hs">
               <li>
-                <AnchorLink href="#about">About</AnchorLink>
+                <AnchorLink href="#work">Portfolio</AnchorLink>
               </li>
               <li>
-                <AnchorLink href="#work">Portfolio</AnchorLink>
+                <AnchorLink href="#about">About</AnchorLink>
               </li>
               <li>
                 <a href={`mailto:${email}`}>Contact</a>

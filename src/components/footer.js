@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 
 import { graphql, StaticQuery } from "gatsby"
 
-import '../utils/fontawesome'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "../utils/fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Footer = () => (
   <StaticQuery
@@ -25,26 +25,26 @@ const Footer = () => (
           <div className="grid">
             <div className="col-xs-12">
               <ul className="social">
-                {
-                  data.site.siteMetadata.social.map((link, i) => {
-                   return (
-                     <li key={i}>
-                       <a className="link"
-                         href={link.url}
-                         title={link.name}
-                         target="_blank"
-                         rel="noopener noreferrer"
-                       >
-                         {link.name}
-                       </a>
-                     </li>
-                   )
-                  })
-                }
+                {data.site.siteMetadata.social.map((link, i) => {
+                  return (
+                    <li key={i}>
+                      <a
+                        className="link"
+                        href={link.url}
+                        title={link.name}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.name}
+                      </a>
+                    </li>
+                  )
+                })}
               </ul>
               <p>
                 <span className="MadeWithLove">
-                  Made with <FontAwesomeIcon icon="heart" /> by Mitchell Hollander &copy; {new Date().getFullYear()}
+                  Made with <FontAwesomeIcon icon="heart" /> by Mitchell
+                  Hollander &copy; {new Date().getFullYear()}
                 </span>
               </p>
             </div>

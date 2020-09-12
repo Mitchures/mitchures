@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from 'react-helmet'
+import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
-import Parallax from 'react-rellax'
+// import Parallax from "react-rellax"
 
 import Nav from "./nav"
 import "../stylesheets/layout.scss"
@@ -25,14 +25,29 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: data.site.siteMetadata.description },
-            { name: 'keywords', content: 'mitchell hollander, software development, photography' },
+            {
+              name: "description",
+              content: data.site.siteMetadata.description,
+            },
+            {
+              name: "keywords",
+              content: "mitchell hollander, software development, photography",
+            },
           ]}
         >
-        <html lang="en" />
+          <html lang="en" />
         </Helmet>
-        <Parallax speed={4} className="orb animated fadeInOrb" style={{ transform: 'rotate(45deg)' }}/>
-        <Nav title={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />
+        {/* <Parallax speed={-3} className="layout__parallax">
+          <h2 className="layout__parallaxText">
+            ミツチェル
+            <br />
+            ホランダー
+          </h2>
+        </Parallax> */}
+        <Nav
+          title={data.site.siteMetadata.title}
+          email={data.site.siteMetadata.email}
+        />
         {children}
       </>
     )}

@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import About from "../components/about"
 import Work from "../components/work"
+import Skills from "../components/skills"
 import Footer from "../components/footer"
 import SEO from "../components/seo"
 
@@ -13,6 +14,7 @@ const Index = () => (
     <Header />
     <Work />
     <About />
+    <Skills />
     <Footer />
   </Layout>
 )

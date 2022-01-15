@@ -29,6 +29,9 @@ const Nav = ({ title, email }) => {
                 <AnchorLink href="#about">About</AnchorLink>
               </li>
               <li>
+                <AnchorLink href="#skills">Skills</AnchorLink>
+              </li>
+              <li>
                 <a href={`mailto:${email}`}>Contact</a>
               </li>
             </ul>

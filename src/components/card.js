@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from 'gatsby-image';
+import Img from "gatsby-image"
 
 const Card = ({ className, header, cover, description }) => {
-
   const data = useStaticQuery(graphql`
     query {
       images: allFile {
@@ -23,8 +22,8 @@ const Card = ({ className, header, cover, description }) => {
   `)
 
   const image = data.images.edges.find(n => {
-    return n.node.relativePath.includes(cover);
-  });
+    return n.node.relativePath.includes(cover)
+  })
 
   const customClass = className || ""
 

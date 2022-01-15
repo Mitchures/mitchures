@@ -37,17 +37,12 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        {/* <Parallax speed={-3} className="layout__parallax">
-          <h2 className="layout__parallaxText">
-            ミツチェル
-            <br />
-            ホランダー
-          </h2>
-        </Parallax> */}
-        <Nav
-          title={data.site.siteMetadata.title}
-          email={data.site.siteMetadata.email}
-        />
+        {/* <Parallax
+          speed={4}
+          className="orb animated fadeInOrb"
+          style={{ transform: "rotate(45deg)" }}
+        /> */}
+        <Nav title={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />
         {children}
       </>
     )}

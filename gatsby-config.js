@@ -23,14 +23,6 @@ module.exports = {
         url: `https://www.instagram.com/mitchures.co/`,
       },
       {
-        name: `Facebook`,
-        url: `https://www.facebook.com/profile.php?id=100008081385480`,
-      },
-      {
-        name: `Pinterest`,
-        url: `https://www.pinterest.com/MitchellH07/`,
-      },
-      {
         name: `Github`,
         url: `https://github.com/mitchures`,
       },
@@ -87,10 +79,22 @@ module.exports = {
     ],
     projects: [
       {
+        name: `Animitchures`,
+        description: `Animitchures is a full featured anime tracking application built using React, Typescript, Firebase, and the Anilist.co GraphQL API. It also includes user authentication that features "Sign in with" Apple and Google providers. As a passion project of mine, its still currently a work in progress as I add new features when ever I have time. `,
+        url: `https://github.com/Mitchures/animitchures`,
+        cover: `animitchures`,
+      },
+      {
         name: `Mitchures Pictures`,
         description: `Mitchures Pictures is a photo gallery app displaying my photography work built in Vue.js and using Firebase for photo storage.`,
         url: `https://mitchures.pictures/`,
         cover: `mitchures-pictures`,
+      },
+      {
+        name: `Apple Media Explorer`,
+        description: `An Apple Music UI inspired iTunes media finder built using Typescript, React, React Context API, and Apple's iTunes Search API.`,
+        url: `https://apple-media-explorer.firebaseapp.com/`,
+        cover: `apple-media-explorer`,
       },
       {
         name: `Mitchstachat`,
@@ -123,12 +127,6 @@ module.exports = {
         cover: `mitchures-slack-alt`,
       },
       {
-        name: `Sakura Performance Manager`,
-        description: `Sakura Performance Manager utilizes both React and Ruby on Rails in order to create a user experience that provides Managers with the ability to submit employee performance reviews.`,
-        url: `https://sakura-performance-manager.herokuapp.com/`,
-        cover: `sakura-performance-manager-alt`,
-      },
-      {
         name: `Cryptocurrency Dashboard`,
         description: `Cryptocurrency Dashboard app built with Ruby on Rails using the CryptoCompare API.`,
         url: `https://crypto-comparison-dashboard.herokuapp.com/`,
@@ -139,12 +137,6 @@ module.exports = {
         description: `Otaku-themed placeholder text generator built with Gatsby.js and React.`,
         url: `https://otakuipsum.netlify.com/`,
         cover: `otaku-ipsum-alt`,
-      },
-      {
-        name: `Crypto Comparison`,
-        description: `Cryptocurrency comparison app built with Gatsby.js & React using the CoinMarketCap API.`,
-        url: `https://cryptocompare.netlify.com/`,
-        cover: `crypto-comparison-alt`,
       },
       {
         name: `Maku`,

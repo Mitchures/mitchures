@@ -16,16 +16,16 @@ $lg: 75rem;
 
 @for $i from 1 through $grid-columns {
   .col-xs-#{$i} {
-    flex-basis: $i / $grid-columns * 100%;
-    max-width: $i / $grid-columns * 100%;
+    flex-basis: calc($i / $grid-columns * 100%);
+    max-width: calc($i / $grid-columns * 100%);
   }
 }
 
 @media (min-width: $sm) {
   @for $i from 1 through $grid-columns {
     .col-sm-#{$i} {
-      flex-basis: $i / $grid-columns * 100%;
-      max-width: $i / $grid-columns * 100%;
+      flex-basis: calc($i / $grid-columns * 100%);
+      max-width: calc($i / $grid-columns * 100%);
     }
   }
 }
@@ -33,8 +33,8 @@ $lg: 75rem;
 @media (min-width: $md) {
   @for $i from 1 through $grid-columns {
     .col-md-#{$i} {
-      flex-basis: $i / $grid-columns * 100%;
-      max-width: $i / $grid-columns * 100%;
+      flex-basis: calc($i / $grid-columns * 100%);
+      max-width: calc($i / $grid-columns * 100%);
     }
   }
 }
@@ -42,8 +42,8 @@ $lg: 75rem;
 @media (min-width: $lg) {
   @for $i from 1 through $grid-columns {
     .col-lg-#{$i} {
-      flex-basis: $i / $grid-columns * 100%;
-      max-width: $i / $grid-columns * 100%;
+      flex-basis: calc($i / $grid-columns * 100%);
+      max-width: calc($i / $grid-columns * 100%);
     }
   }
 }

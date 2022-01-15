@@ -148,7 +148,7 @@ nav {
   position: relative;
 }
 
-.introduction {
+header {
   padding: 9rem 0;
 
   h3 {
@@ -184,22 +184,28 @@ nav {
   text-align: left;
   width: 100%;
   height: 100%;
+  background-color: #f5f5f7;
+  border-radius: 1.875rem;
+  padding: 2.5rem;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
   &:hover {
     transform: scale(0.95) translateZ(0px);
   }
 
+  .gatsby-image-wrapper {
+    border-radius: 0.325rem;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+  }
+
   img {
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.075);
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   }
 
   .card-content {
-    padding: 2rem 0;
+    padding: 2rem 0 0;
 
     p {
       margin: 4px 0;
@@ -263,7 +269,8 @@ figure {
   height: 150vw;
   border-radius: 50%;
   opacity: 1;
-  background-image: $gradient-sunrise;
+//   background-image: $gradient-sunrise;
+    background-color: #ffd780;
 }
 
 footer {
@@ -329,7 +336,8 @@ footer {
   }
 }
 
-.Carousel-wrapper {
+.carousel {
+  margin-top: 1.625rem;
   border-bottom: 2px solid #eee;
   padding: 5px 0 10px;
   background: linear-gradient(to bottom, transparent 50%, #eeeeee 50%);
@@ -386,7 +394,7 @@ footer {
     margin: 0 2.5rem 0 0;
   }
 
-  .Carousel-wrapper {
+  .carousel {
     font-size: 1.5rem;
     .Typist .Cursor {
       display: inline-block;
@@ -448,7 +456,7 @@ footer {
     font-size: 250px;
   }
 
-  .introduction {
+  header {
     padding: 13rem 0;
 
     h3 {
@@ -499,7 +507,7 @@ footer {
     height: 80vw;
   }
 
-  .Carousel-wrapper {
+  .carousel {
     h2 {
       font-size: 2.125rem;
     }
@@ -508,11 +516,11 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   body {
-    // background: $dark-bg;
-    background-image: url(../images/hbomax-bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: $dark-bg;
+    // background-image: url(../images/hbomax-bg.png);
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
     color: $dark-primary-text;
     h1,
     h2,
@@ -540,7 +548,7 @@ footer {
       color: #0f0f0f;
     }
 
-    .introduction {
+    header {
       h3 {
         color: $dark-secondary-text;
       }
@@ -552,6 +560,7 @@ footer {
       }
     }
     .card {
+      background-color: #161617;
       img {
         opacity: 0.75;
       }
@@ -596,7 +605,7 @@ footer {
       }
     }
 
-    .Carousel-wrapper {
+    .carousel {
       border-color: white !important;
       background: linear-gradient(to bottom, transparent 50%, white 50%);
       background-size: 100% 200%;

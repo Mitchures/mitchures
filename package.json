@@ -1,47 +1,40 @@
 {
-  "name": "mitchures",
+  "name": "mitchures.co",
+  "version": "1.0.0",
   "private": true,
-  "description": "I'm Mitchell Hollander, a Software Developer & Photographer based in Nashville, Tennessee.",
-  "version": "0.1.0",
-  "author": "Mitchell Hollander <create@mitchures.co>",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "firebase-tools": "^7.11.0",
-    "gatsby": "^4.5.2",
-    "gatsby-image": "^2.2.23",
-    "gatsby-plugin-manifest": "^2.2.20",
-    "gatsby-plugin-offline": "^3.0.11",
-    "gatsby-plugin-react-helmet": "^3.1.10",
-    "gatsby-plugin-sass": "^5.5.0",
-    "gatsby-plugin-sharp": "^2.2.27",
-    "gatsby-source-filesystem": "^2.1.28",
-    "gatsby-transformer-sharp": "^2.2.19",
-    "ink": "^2.6.0",
-    "lodash": "^4.17.19",
-    "node-sass": "^6.0.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^16.10.1",
-    "react-helmet": "^5.2.1",
-    "react-rellax": "^1.0.3",
-    "react-typist": "^2.0.5",
-    "use-dark-mode": "^2.3.1"
-  },
-  "devDependencies": {
-    "prettier": "^1.18.2"
-  },
+  "description": "mitchures.co",
+  "author": "Mitchell Hollander",
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve"
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "firebase-tools": "^11.30.0",
+    "gatsby": "^5.9.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-image": "^3.9.0",
+    "gatsby-plugin-manifest": "^5.9.0",
+    "gatsby-plugin-offline": "^6.9.0",
+    "gatsby-plugin-sass": "^6.9.0",
+    "gatsby-plugin-sharp": "^5.9.0",
+    "gatsby-source-filesystem": "^5.9.0",
+    "gatsby-transformer-sharp": "^5.9.0",
+    "react": "^18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-rellax": "^1.0.3",
+    "react-typist": "^2.0.5",
+    "sass": "^1.62.1",
+    "use-dark-mode": "^2.3.1"
   }
 }

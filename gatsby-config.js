@@ -1,3 +1,6 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
     title: `Mitchures`,
@@ -147,19 +150,9 @@ module.exports = {
     ],
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-image",
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: `mitchures`,
         short_name: `mitchures`,
@@ -169,6 +162,17 @@ module.exports = {
         theme_color: `#ffffff`,
         icon: `src/images/mitchures-favicon.png`,
       },
+    },
+    "gatsby-plugin-sharp",
+    `gatsby-plugin-sass`,
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
     },
     `gatsby-plugin-offline`,
   ],

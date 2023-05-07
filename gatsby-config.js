@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mitchures`,
-    description: `Hello, I'm Mitchell Hollander. An exuberant software developer based in Nashville, Tennessee.`,
+    description: `Hello, I'm Mitchell Hollander. An exuberant software developer based in Oahu, Hawaii.`,
     author: `Mitchell Hollander`,
     email: `create@mitchures.co`,
     phrases: [

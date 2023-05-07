@@ -22,9 +22,9 @@ const About = () => (
           </p>
           <p>
             Aside from programming, I also have a great interest in film and photography, especially
-            35mm slide film. You can often find me traversing through the streets of Nashville,
-            metering light, and taking candid shots of folk with my trusty <em>Leica M6</em> and a
-            roll of <em>Fujichrome Provia 100F</em>.
+            35mm slide film. You can often find me traversing through the streets of Oahu, metering
+            light, and taking candid shots of folk with my trusty <em>Leica M6</em> and a roll of{" "}
+            <em>Fujichrome Provia 100F</em>.
           </p>
           <p>
             When I'm not snapping photos or coding, one might also find me sipping on an{" "}

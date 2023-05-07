@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import ReactDOM from "react-dom"
+import { createRoot } from "react-dom/client"
 import Typist from "react-typist"
 import assign from "lodash/assign"
 import get from "lodash/get"
@@ -39,11 +39,7 @@ class TextCarousel extends Component {
 
   handleTypingComplete = () => {
     // Need the delay since typist triggers typingComplete before that happens
-    const cursorHideDelay = get(
-      this.props.typistProps,
-      "cursor.hideWhenDoneDelay",
-      0
-    )
+    const cursorHideDelay = get(this.props.typistProps, "cursor.hideWhenDoneDelay", 0)
 
     if (this.props.loopPhrases) {
       this.timer = setTimeout(() => {
@@ -64,11 +60,7 @@ class TextCarousel extends Component {
       onTypingDone: this.handleTypingComplete,
     })
 
-    if (domNode !== undefined) ReactDOM.unmountComponentAtNode(domNode)
-    ReactDOM.render(
-      <Typist {...typistProps}>{this.getCurrentPhrase()}</Typist>,
-      domNode
-    )
+    createRoot(domNode).render(<Typist {...typistProps}>{this.getCurrentPhrase()}</Typist>)
 
     this.setNextPhrase()
   }
@@ -76,12 +68,7 @@ class TextCarousel extends Component {
   render = () => {
     const customClass = this.props.className || ""
 
-    return (
-      <span
-        className={`textCarouselContainer ${customClass}`}
-        ref="phraseContainer"
-      />
-    )
+    return <span className={`textCarouselContainer ${customClass}`} ref="phraseContainer" />
   }
 }
 

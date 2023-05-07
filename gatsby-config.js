@@ -84,7 +84,7 @@ module.exports = {
       {
         name: `Animitchures`,
         description: `Animitchures is a full featured anime tracking application built using React, Typescript, Firebase, and the Anilist.co GraphQL API. It also includes user authentication that features "Sign in with" Apple and Google providers. As a passion project of mine, its still currently a work in progress as I add new features when ever I have time. `,
-        url: `https://github.com/Mitchures/animitchures`,
+        url: `https://animitchure.firebaseapp.com/`,
         cover: `animitchures`,
       },
       {

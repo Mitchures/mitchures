@@ -34,7 +34,6 @@
     "react-helmet": "^6.1.0",
     "react-rellax": "^1.0.3",
     "react-typist": "^2.0.5",
-    "sass": "^1.62.1",
-    "swiper": "^11.2.8"
+    "sass": "^1.62.1"
   }
 }

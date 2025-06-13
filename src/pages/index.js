@@ -11,8 +11,8 @@ const Index = () => (
   <Layout>
     <SEO title="Home" />
     <Header />
-    <Work />
     <About />
+    <Work />
     <Footer />
   </Layout>
 )

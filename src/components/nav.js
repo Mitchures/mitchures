@@ -23,16 +23,13 @@ const Nav = ({ title, email }) => {
           <div className="col-xs-12 col-sm-6">
             <ul className="animated fadeIn delay-hs">
               <li>
-                <AnchorLink href="#work">Portfolio</AnchorLink>
+                <AnchorLink href="#work">portfolio</AnchorLink>
               </li>
               <li>
-                <AnchorLink href="#about">About</AnchorLink>
+                <AnchorLink href="#about">about</AnchorLink>
               </li>
               <li>
-                <AnchorLink href="#skills">Skills</AnchorLink>
-              </li>
-              <li>
-                <a href={`mailto:${email}`}>Contact</a>
+                <a href={`mailto:${email}`}>contact</a>
               </li>
             </ul>
           </div>

@@ -6,8 +6,16 @@
   animation-fill-mode: both;
 }
 
+.delay-qs {
+  animation-delay: .25s;
+}
+
 .delay-hs {
   animation-delay: .5s;
+}
+
+.delay-3qs {
+  animation-delay: .75s;
 }
 
 .delay-1s {
@@ -20,6 +28,10 @@
 
 .delay-2 {
   animation-delay: 2s;
+}
+
+.delay-2hs {
+  animation-delay: 2.2s;
 }
 
 // Keyframe Animations

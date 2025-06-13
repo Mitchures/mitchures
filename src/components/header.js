@@ -10,23 +10,25 @@ const Header = () => (
       query SiteDescriptionQuery {
         site {
           siteMetadata {
+            subtitle
+            tagline
+            location
             description
             phrases
           }
         }
       }
     `}
-    render={data => (
-      <header className="animated fadeIn delay-1s">
+    render={(data) => (
+      <header>
         <div className="container">
           <div className="grid">
             <div className="col-xs-12 col-sm-12 col-md-12">
-              <h1>{data.site.siteMetadata.description}</h1>
-              <h3>
-                As a passionate programmer I enjoy creating digital experiences through beautiful
-                design and semantic code with extensive knowledge of the following technologies:
-              </h3>
-              <div className="carousel">
+              <h3 className="animated fadeIn delay-1s">{data.site.siteMetadata.subtitle}</h3>
+              <h1 className="animated fadeIn delay-1hs">
+                {data.site.siteMetadata.tagline} <span>{data.site.siteMetadata.location}</span>
+              </h1>
+              <div className="carousel animated fadeIn delay-2">
                 <h2>
                   <TextCarousel
                     phrases={data.site.siteMetadata.phrases}

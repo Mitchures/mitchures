@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
-// import Parallax from "react-rellax"
+import Parallax from "react-rellax"
 
 import Nav from "./nav"
 import "../stylesheets/layout.scss"
@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
@@ -37,11 +37,9 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        {/* <Parallax
-          speed={4}
-          className="orb animated fadeInOrb"
-          style={{ transform: "rotate(45deg)" }}
-        /> */}
+        <Parallax speed={4} className="orb orb1 animated fadeInOrb delay-3qs" />
+        <Parallax speed={8} className="orb orb2 animated fadeInOrb delay-hs" />
+        <Parallax speed={12} className="orb orb3 animated fadeInOrb delay-qs" />
         <Nav title={data.site.siteMetadata.title} email={data.site.siteMetadata.email} />
         {children}
       </>

@@ -1,8 +1,6 @@
-$grid-columns: 12;
+@use "variables";
 
-$sm: 48rem;
-$md: 62rem;
-$lg: 75rem;
+$grid-columns: 12;
 
 .grid {
   display: flex;
@@ -21,7 +19,7 @@ $lg: 75rem;
   }
 }
 
-@media (min-width: $sm) {
+@media (min-width: variables.$sm) {
   @for $i from 1 through $grid-columns {
     .col-sm-#{$i} {
       flex-basis: calc($i / $grid-columns * 100%);
@@ -30,7 +28,7 @@ $lg: 75rem;
   }
 }
 
-@media (min-width: $md) {
+@media (min-width: variables.$md) {
   @for $i from 1 through $grid-columns {
     .col-md-#{$i} {
       flex-basis: calc($i / $grid-columns * 100%);
@@ -39,7 +37,7 @@ $lg: 75rem;
   }
 }
 
-@media (min-width: $lg) {
+@media (min-width: variables.$lg) {
   @for $i from 1 through $grid-columns {
     .col-lg-#{$i} {
       flex-basis: calc($i / $grid-columns * 100%);
@@ -66,7 +64,7 @@ $lg: 75rem;
     }
   }
 
-  @media(min-width: $sm) {
+  @media(min-width: variables.$sm) {
     @for $i from 1 through $grid-columns {
       .col-sm-#{$i} {
         grid-column-start: span #{$i};
@@ -75,7 +73,7 @@ $lg: 75rem;
     }
   }
 
-  @media(min-width: $md) {
+  @media(min-width: variables.$md) {
     @for $i from 1 through $grid-columns {
       .col-md-#{$i} {
         grid-column-start: span #{$i};
@@ -84,7 +82,7 @@ $lg: 75rem;
     }
   }
 
-  @media(min-width: $lg) {
+  @media(min-width: variables.$lg) {
     @for $i from 1 through $grid-columns {
       .col-lg-#{$i} {
         grid-column-start: span #{$i};

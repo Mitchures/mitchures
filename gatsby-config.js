@@ -3,22 +3,30 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Mitchures`,
-    description: `Hello, I'm Mitchell Hollander. An exuberant software developer based in Oahu, Hawaii.`,
+    title: `mitchures`,
+    subtitle: `Hi, I'm Mitchell Hollander`,
+    tagline: `a Software Developer based in `,
+    location: `Tokyo, Japan`,
+    description: `hello, i'm mitchell hollander. an exuberant software developer based in tokyo, japan.`,
     author: `Mitchell Hollander`,
     email: `create@mitchures.co`,
     phrases: [
-      "Full-Stack Development",
-      "JavaScript, Ruby, Java",
-      "VueJS, Vuex, React, jQuery",
-      "GatsbyJS, Jekyll",
-      "PostgreSQL, MySQL, MongoDB",
-      "GraphQL, REST, Firebase",
-      "SASS, LESS, CSS Modules",
-      "Ruby on Rails, NodeJS, ExpressJS",
-      "Git, Subversion",
-      "Thymeleaf, Spring",
-      "Typescript",
+      "proficient in ...",
+      "full-stack development",
+      "javascript, ruby",
+      "vueJS, vuex, pinia",
+      "react, redux, nextJS, gatsbyJS",
+      "postgreSQL, mySQL, mongoDB",
+      "graphQL, firebase",
+      "sass, less, css modules",
+      "ruby on rails, nodeJS, expressJS",
+      "git, typeScript",
+      "i also enjoy ...",
+      "cocktails, mixology",
+      "film photography",
+      "traveling",
+      "anime, manga",
+      "... and diving with sharks",
     ],
     social: [
       {
@@ -138,7 +146,7 @@ module.exports = {
       {
         name: `Otaku Ipsum`,
         description: `Otaku-themed placeholder text generator built with Gatsby.js and React.`,
-        url: `https://otakuipsum.netlify.com/`,
+        url: `https://otakuipsum.netlify.app/`,
         cover: `otaku-ipsum-alt`,
       },
       {
